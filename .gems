@@ -1,5 +1,5 @@
-devise
+devise --version 1.0.1
 warden
-inherited_resources
+inherited_resources --version 1.0.3
 haml
 simple-rss
