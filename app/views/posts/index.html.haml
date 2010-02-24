@@ -1,12 +1,12 @@
 #left{:style => "width: 300px"}
+  %select#show-posts
+    %option{'value' => 0} Show Unread
+    %option{'value' => 1} Show All
   - current_user.feeds.each do |feed|
-  - feed.load_feed!
     %h3
       = feed.title
       = link_to '-', feed, :method => 'delete'
     %br
-    - feed.posts.unread.each do |post|
-      = link_to post.title, post, :class => 'post-link'
-      %br
+    = render :partial => 'posts/left_post', :collection => feed.posts
 #right
   right

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://baseballcrank.com/">
+<title>Baseball Crank</title>
+<link>http://baseballcrank.com/</link>
+<description>The Baseball Crank: Baseball, War, Politics, Law, and More!</description>
+<dc:creator></dc:creator>
+<dc:date>2010-02-23T10:51:24-05:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.33" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/law_a_small_vic.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/war_vi_day.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_scott.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_the_p.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_21910.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/baseball_hall_o_10.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_kudlow.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/baseball_where_3.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_mugged.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/baseball_it_tho.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/pop_culture_har_6.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/historypolitics_2.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/blog_moneytown.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/politics_so_wha.php" />
+<rdf:li rdf:resource="http://baseballcrank.com/archives2/2010/02/baseball_jake_i.php" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/law_a_small_vic.php">
+<title>LAW:  A Small Victory For Federalism</title>
+<link>http://baseballcrank.com/archives2/2010/02/law_a_small_vic.php</link>
+<description><![CDATA[<p>A unanimous Supreme Court this morning, in <a href="http://www.supremecourtus.gov/opinions/09pdf/08-1107.pdf"><em>Hertz Corp. v. Friend</em>, No. 08-1107 (U.S. Feb. 23, 2010)</a>, held that a corporation's "principal place of business" under the federal diversity-jurisdiction statute and the Class Action Fairness Act (CAFA)</p>
+
+<blockquote>refers to the place where the corporation's high level officers direct, control, and coordinate the corporation's activities. Lower federal courts have often metaphorically called that place the corporation's "nerve center." ... We believe that the "nerve center" will typically be found at a corporation's headquarters.</blockquote>
+
+<p>At first blush, while Justice Breyer's opinion is of great practical interest to commercial litigators, it would seem to be little more than a routine dispute over the construction of a federal statute governing the jurisdiction of the federal courts.  But buried within is a small victory for horizontal federalism or <a href="http://baseballcrank.com/archives2/2003/04/law_federalisms_1.php">what I have long referred to as "federalism's edge," i.e., protecting the balance of federalism from being upset by a single state's efforts to assert jurisdiction over the nation as a whole</a>.  Stay with me for just a bit of background and you'll see why.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Flaw_a_small_vic.php&amp;itemDate=2010-02-23%20%0A15%3A51%3A24&amp;itemTitle=LAW%3A%20%20A%20Small%20Victory%20For%20Federalism"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Flaw_a_small_vic.php&amp;itemDate=2010-02-23%20%0A15%3A51%3A24&amp;itemTitle=LAW%3A%20%20A%20Small%20Victory%20For%20Federalism" /></a>
+]]></description>
+<dc:subject>Law 2009</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-23T10:51:24-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/war_vi_day.php">
+<title>WAR:  V-I Day</title>
+<link>http://baseballcrank.com/archives2/2010/02/war_vi_day.php</link>
+<description><![CDATA[<p>Your must-read of the day: <a href="http://davidbellavia.com/2010/our-mission-is-finally-accomplished-anyone-care/">David Bellavia on the end of Operation Iraqi Freedom</a>.  Read, and take a moment of silence for Bellavia's friends and all the others who sacrificed for this moment.</p>
+
+<p><a href="http://minx.cc/?post=298616">H/T</a></p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fwar_vi_day.php&amp;itemDate=2010-02-22%20%0A23%3A25%3A05&amp;itemTitle=WAR%3A%20%20V-I%20Day"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fwar_vi_day.php&amp;itemDate=2010-02-22%20%0A23%3A25%3A05&amp;itemTitle=WAR%3A%20%20V-I%20Day" /></a>
+]]></description>
+<dc:subject>War 2007-09</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-22T18:25:05-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_scott.php">
+<title>POLITICS:  Scott Brown, Ron Paul, The CPAC Straw Poll and 2012</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_scott.php</link>
+<description><![CDATA[<p>Let's talk just a little about the 2012 presidential election.  I'd like to make three related points:</p>
+
+<p>(1)  Nobody should be touting Scott Brown as a 2012 presidential candidate.</p>
+
+<p>(2)  The GOP is going to be picking from a bench that is short on candidates with the experience we need.</p>
+
+<p>(3)  It's a <em>good</em> thing that Ron Paul won the "straw poll" of 2012 candidates at the Conservative Political Action Conference (CPAC) last week.</p>
+
+<p>Now, as a general rule, it's not a great time for Republicans and conservatives to be talking about the 2012 election.  We have more than enough on our plates fighting the policy battles (Obamacare and otherwise) that will dominate the rest of the year, as well as the numerous elections to be contested in 2010.  In fact, the Right has benefitted - much as the Left did in 2005-06 - from its lack of a single, identifiable leader; as hard as the Obama White House has tried to personalize attacks on its critics, the absence of a single leader to pick on means that voters' attention has remained fixed on Obama's own failures (and rightly so, given the overwhelming majorities he has in both Houses of Congress).  But sometimes it's necessary to head off problems before they develop.</p>
+
+<p><strong>Scott Brown For ... Senator</strong></p>
+
+<p>Since Scott Brown's stunning victory in the special Senate election in Massachusetts in January, he's been the man in demand for Republicans everywhere who are looking to rub off some of the magic that allowed him to win the first GOP Senate seat in the Bay State in decades.  Inevitably, there have been rumblings here and there about running Brown for president in 2012 against Obama - hey, he can win in Massachusetts, why not?</p>
+
+<p>Hold on there, tiger.</p>
+
+<p>First of all, analysis by following the latest shift in the wind is the worst kind of punditry.  A good number of the people touting Brown, a fairly liberal but populist New England Republican, were touting conservative (and also newly-elected) Virginia Governor Bob McDonnell back in November, in both cases because of the whole "shiny new toy" factor.  A new candidate who hasn't had time to accumulate baggage, make compromises and make enemies always looks appealing, because you can wishcast all sorts of things onto them.  But that's a lousy way to pick a potential president or a potential national candidate.</p>
+
+<p>McDonnell, at least, is a plausible national figure, if you add in some experience and he compiles a successful track record in office - he's already been the state Attorney General, and is embarking on a term as the state's chief executive, the closest thing our political system offers (in some ways even moreso than the Vice Presidency) to good training to be President.  And running and hopefully governing as a conservative in a "purple" state, McDonnell could conceivably build a record that makes him appealing both to Republican primary voters and the voters of his own state.</p>
+
+<p>Not so for Scott Brown.  One can hope that Brown's populist campaign stands as a reminder to him, as he serves, that there are some conservative principles that are enduringly popular even in Massachusetts.  But the simple reality is that the voters in Brown's state won't re-elect him in 2012 if he starts acting like a guy who's thinking as a Republican presidential candidate, and Republican primary voters won't warm to him if he votes as a Massachusetts Republican.  We saw how well it worked out in 2008 for Mitt Romney, who bailed out on running for re-election in 2006 only to be rejected by GOP presidential primary voters in 2008.  The most conspicuous issue on which this is the case is abortion, the subject of some of Romney's most glaring flip-flops and a significant Achilles heel as well for serious GOP candidates like Rudy Giuliani; Brown is something of a moderate on the issue, but remains essentially pro-choice, and while there's plenty of room in the tent for guys like that, it would be a non-starter for someone running to <em>lead</em> a basically pro-life party (the failure of Rudy's campaign has largely convinced me that this is a circle that may just be impossible to square because it leaves the candidate with too little margin for error in other ways).  You could pick more examples down the line of less-prominent issues.</p>
+
+<p>Brown, to his credit, has mostly laughed at the idea, but for his own good, he'd be better served if he closed the door on it entirely and emphatically, and moreover resisted the temptation to let other Republican candidates drag him all over the map to campaign for them.  Presidential daydreams are bad for the longeitvity of politicians who depend on their regular-guy image, and national Republican politics is hazardous to anybody who wants to get re-elected in Massachusetts.</p>
+
+<p>There's a more fundamental problem with the talkof running Brown in 2012: it suggests that some pundits and activists haven't learned anything from Barack Obama.  Brown is a legislator.  He's served a couple terms in the State Senate, and being in the minority doesn't have a lot of accomplishments.  He's held down a part-time law practice.  He's won precisely one statewide election, and has yet to make any mark in Washington.  In other words, <em>his resume is just about exactly the same as Barack Obama's in 2008</em>.</p>
+
+<p>We've seen in practice the many ways in which <a href="http://www.baseballcrank.com/archives2/2008/05/politics_yes_ex.php">Obama's total lack of any of the traditional types of experience we look for in a president - executive experience, national security experience, political and political leadership experience, military combat service, or private sector business experience - </a>has caught up with him.  He's made one rookie mistake after another, and even his defenders at this point have to acknowledge that his struggles, especially in managing his legislative agenda, have derived from a fair number of unforced strategic errors borne of a misunderstanding of how to run a presidency - overreaching, trying to do too many things at once, ceding too much authority to Congress, promising things he couldn't deliver.  Having never run anything before, he accentuated his own weaknesses by selecting a Vice President, Cabinet and White House staff heavy on generalist legislators and Chicagoans, light on executives and people with useful specialized expertise, and almost barren of people familiar with the private sector.  This, in turn, had secondary consequences (legislators and bureaucrats are more apt than your typical businessman to not bother paying their taxes).  Nor is this the first time the Democrats have made this particular mistake - in 2004, they had as their Vice Presidential nominee John Edwards, whose only tenure in public office was a single term as a Senator, to which he had no realistic chance of being re-elected, prior to which he had run a small (though profitable) personal injury law practice.  Like Obama, Edwards had no executive experience, no real legislative accomplishments, no experience with national security issues, no experience working in any other sort of private business and no military service record.</p>
+
+<p>Republicans are supposed to know better.  The absolute last thing the GOP should be doing in 2012 is letting Obama off the hook - or running the risk of electing a candidate who puts America through the same thing - by nominating somebody who suffers the same weaknesses, however good a Senate candidate he may be or however good a Senator he may become.</p>
+
+<p><strong>A Time For Leadership</strong></p>
+
+<p>I have not picked a horse yet for 2012, and would caution anyone against doing so before the 2010 elections are over.  That being said, I do know what I want:  I want a candidate who can bring the kind of proven leadership experience to the table that we lack in our current president, ideally over some length of time.  I want a candidate who has some record of having and standing for principles against adversity.  And in light of the ugly record of the McCain, Dole, Kerry, McGovern and Goldwater campaigns, among others, I'd really rather not run a Senator, or someone else whose public career is largely or wholly as a legislator.  The presidency is still an executive job, after all.</p>
+
+<p>I'm realistic that we may have less than ideal choices - every presidential election season requires settling for the best of what you have in front of you, and even the best candidates have their drawbacks.  As of now, we appear to have only two candidates (Tim Pawlenty and Mitt Romney) who seem <em>certain</em> to run, though many others are possibles.  A number of members of the Senate and House are reportedly thinking of running, several of whom are smart, principled people, excellent at the jobs they now do.  Two of our potentially leading contenders (Romney and Sarah Palin) are one-term Governors, in Palin's case a term she resigned before completing.  Both are undoubtedly more experienced than Obama - besides being state-level chief executives, Romney had a long and successful career as a business executive, Palin spent the better part of 17 years in a variety of offices including being a mayor and heading the state oil and gas commission, and both had already accomplished more by 2008 than Obama ever had - but are nonetheless a good deal lighter on experience than I'd like to see.  (Long-time readers know <a href="http://www.baseballcrank.com/archives2/2007/12/politics_the_tr_7.php">my issues with Romney</a>; I haven't ruled out supporting Palin in the primaries but really will take a long look at the alternatives first).  Several of the party's possible brightest stars in the Governor's mansions - Bobby Jindal, McDonnell, Chris Christie - will not be scheduled to complete their first terms until 2011 or 2013.</p>
+
+<p>Part of the problem is the shortage of GOP Governors elected or re-elected in 2006 or re-elected in 2008, the cycles when you'd look to be getting people ready to make the next step.  There are at present only 15 sitting GOP Governors who have been re-elected at least once, and that’s the pool you would ordinarily look to; there's only a few others up to be elected for a second time in 2010.  One of the 15 is Arnold Schwarzenegger, who's legally ineligible for the presidency.  One is Mark Sanford, who took himself out of the running with personal scandal.  Others are plainly too liberal to run as GOP standard-bearers: Linda Lingle, Jodi Rell, Jim Douglas.  Jon Hoeven is running for the Senate, as is Charlie Crist, who'd otherwise be up for re-election in 2010.  Jon Hunstmann left office to pursue an ambassadorship to China.  That leaves an eight-man bench:<br />
+ <br />
+Bob Riley-AL<br />
+Sonny Perdue-GA<br />
+Mitch Daniels-IN<br />
+Tim Pawlenty-MN<br />
+Haley Barbour-MS<br />
+Dave Heineman-NE<br />
+Mike Rounds-SD<br />
+Rick Perry-TX<br />
+ <br />
+You can add Mike Huckabee as a guy with a decade's experience as a governor who may run.  We'll leave the pros and cons of this group - Pawlenty's running, and Daniels, Barbour and Perry all might - for another day.  Because before we get too comfortable with any one candidate, we come to my third point.</p>
+
+<p><strong>CPAC Chooses None of the Above</strong></p>
+
+<p>The media has tried out various angles on the news that <a href="http://thecaucus.blogs.nytimes.com/2010/02/20/ron-paul-wins-cpac-straw-poll/">Ron Paul won the 2012 straw poll at this year's CPAC, winning around 740 votes out of the 2,395 people who voted in the poll, itself a subset of the 10,000+ attendees</a>.  Some might take it as a sign of some vitality for Paul-ism, or whatever.  To me, what it says is this:  yes, Ron Paul's people remain organized and energized in their own way, but the real story is that (1) nobody else has either a naturally strong enough constituency among conservative activists to beat Paul without trying (and straw polls are all about trying) and (2) nobody else was willing to put resources into winning a poll of this nature before the 2010 elections.</p>
+
+<p>That's good news all around.  Good news for the candidates because people like Romney, Pawlenty, Palin, Mike Huckabee and others are still prioritizing the 2010 races and policy battles, trying to get other Republicans elected and defeat bad legislation.  That's a lesson we Republicans and conservatives want them all to get.  And good news for the movement that people are willing to send those candidates, and any other prospective 2012 aspirants, a message:  you still have a lot to prove to us.  For a movement that has regained its momentum mostly from the ground up over the past year, and that faces lingering doubts as to how well its current and future leaders have learned the lessons of past mistakes, that's maybe the best news of all.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_scott.php&amp;itemDate=2010-02-22%20%0A22%3A33%3A28&amp;itemTitle=POLITICS%3A%20%20Scott%20Brown%2C%20Ron%20Paul%2C%20The%20CPAC%20Straw%20Poll%20and%202012"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_scott.php&amp;itemDate=2010-02-22%20%0A22%3A33%3A28&amp;itemTitle=POLITICS%3A%20%20Scott%20Brown%2C%20Ron%20Paul%2C%20The%20CPAC%20Straw%20Poll%20and%202012" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-22T17:33:28-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_the_p.php">
+<title>POLITICS:  The &quot;P&quot; Word</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_the_p.php</link>
+<description><![CDATA[<p>I know I linked to him once already today, but <a href="http://newledger.com/2010/02/profits-insurers-and-defunding-medicare-advantage/">Francis Cianfrocca's column on Medicare Advantage</a> - which is very much worth reading in full - neatly summarizes, in response to criticism from Obama and Pelosi, why it is necessary for businesses with shareholders to make a profit:</p>
+
+<blockquote>Everyone gets that you have to pay salaries to the people who do the work for you. But <strong>you also have to pay the people who provide the capital to start and grow the business</strong> (and create the jobs) in the first place. That obligation never goes away. Even though Nancy Pelosi has recently been howling about the fact that insurance companies make billions in profits, she never stops to think that: A) we wouldn't have large, efficient insurance providers without capital; and B) the health insurance sector provides terrible returns to investors relative to other sectors because it's already over-regulated; and C) most of those profits are used by pension funds to write monthly checks to retirees.</blockquote>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_the_p.php&amp;itemDate=2010-02-19%20%0A19%3A41%3A36&amp;itemTitle=POLITICS%3A%20%20The%20%22P%22%20Word"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_the_p.php&amp;itemDate=2010-02-19%20%0A19%3A41%3A36&amp;itemTitle=POLITICS%3A%20%20The%20%22P%22%20Word" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-19T14:41:36-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_21910.php">
+<title>POLITICS:  2/19/10 Quick Links</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_21910.php</link>
+<description><![CDATA[<p>*<a href="http://www.nytimes.com/2010/02/19/nyregion/19paterson.html?hp=&pagewanted=all">The NY Times finally releases its expose on David Paterson</a>, which has been relentlessly hyped by leaks, perhaps driven by the Andrew Cuomo camp (Cuomo undoubtedly wants to avoid another racially divisive primary; certainly <a href="http://lazio.com/releases_view.cfm?article_level1_category_id=7&article_level1_id=1001&pageno=1&year=2010">Rick Lazio thinks the Times is flacking for Cuomo</a>).  The story is decidedly underwhelming if you're looking for sexy details, but fairly damning nonetheless in its portrayal of a governor who's just not that on top of things.  It's impossible to avoid the fact that being functionally illiterate (Paterson, who of course is blind, does not read Braille) is a serious impairment for a governor.</p>
+
+<p>*<a href="http://www.slate.com/blogs/blogs/kausfiles/archive/2010/02/18/unions-are-crippling-obama-exhibit-a.aspx">Mickey Kaus explains through the example of the weatherization program how the political power of unions - specifically the Davis-Bacon Act - has crippled even the best-intentioned plans to use stimulus money to put people immediately to work.</a></p>
+
+<p>On a related note, <a href="http://newledger.com/2010/02/the-inconvenient-truth-about-spending-and-job-creation/">Francis Cianfrocca notes </a> the New York Times' compliants about job-creation programs that are aimed at private sector jobs rather than the public sector.  <a href="http://www.whitehouse.gov/the-press-office/briefing-white-house-press-secretary-robert-gibbs-21710">Robert Gibbs, at Wednesday's press briefing</a>, implicitly admitted the same thing - the main benefit of the stimulus has gone to government workers (this is aside from the fact that in many cases, governments just gave raises to existing workers rather than hiring new ones):</p>
+
+<blockquote>Q    Robert, following on that, one of the criticisms Republicans keep harping on is that the President promised that the jobs that would be saved or created would be about 90 percent private sector, and Republicans keep pointing out that it's woefully inadequate in that department; it's mostly been government-related jobs, public sector jobs, not private sector jobs.  And it's important obviously to save public sector jobs as well.  It's nowhere near what the President promised.  How do you account for that?
+
+<p>MR. GIBBS:  Well, look, I don't have the latest figures in front of me.  <strong>Obviously a big chunk of jobs</strong> that did result in unemployment last year -- <strong>the biggest chunk was teachers</strong>, which, regardless of what category you put that in, I think there are very few parents in this country that don't value a good teacher.</blockquote></p>
+
+<p>+++</p>
+
+<blockquote>Q    On the stimulus, I want to give you a chance to respond to something that Michael Steele, the RNC chairman, said this morning about the Recovery Act, and I'm quoting him directly here now:  "The other fiction we need to dispense with is this 'saved and created' nonsense."  I'm still quoting:  "I don't know what that is.  I don't know what that looks like.  And if I can't put my fingers on it, if I can't touch it, and if I can't get up at 6:00 in the morning and go to work there, then it's not happening.  And that's the reality of a lot of people right now."
+
+<p>MR. GIBBS:  Well, I can find a school that Chairman Steele can go to at 6:00 a.m. and put his fingers on -- (laughter) -- <strong>an elementary school teacher</strong> who -- (laughter) -- no, no, no, hold on, come on.  A little bit of decorum -- that he can look at as somebody who, as a result of the economic downturn <strong>did not lose their job as a result of the recovery plan</strong>.</blockquote></p>
+
+<p>That's your Obama Administration economic growth strategy, folks.  And yes, it ties into the repeated remarks over the years by President and Mrs. Obama denigrating private sector employment and bemoaning that more people don't go to work in "public service" jobs (whose salaries must be funded by private sector workers), and into Obama's proposal to forgive student loan debt for public service workers, giving yet another leg up to public sector employment.  That's why <a href="http://www.redstate.com/mark_i/2010/02/15/that-christie-speech/">what Chris Christie is doing in New Jersey</a> in standing up to the public sector's 'government of the government, by the government, for the government' mindset is so important.  Christie's a great spokesman on this issue because he worked as a government lawyer - and lawyers are the one profession in which government workers make only a fraction of the salaries they could earn in private practice.</p>
+
+<p>*Weather is not Climate.  <a href="http://www.fumento.com/weblog/archives/2010/02/getting_it_part.html">Michael Fumento</a> and <a href="http://online.wsj.com/article/SB10001424052748703382904575059270348147154.html">James Taranto</a> have some fun at the expense of those on the Left who have ignored that point in the past and now have to face public mockery from those parts of the country experiencing an unseasonably cold or snowy winter.  Of course, the Anthropogenic Global Warming crowd stubbornly clings to the argument that any weather - warmer, colder, stormier, less stormy - is proof of the theory, but he who lives by the anecdote dies by it as well.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_21910.php&amp;itemDate=2010-02-19%20%0A17%3A08%3A40&amp;itemTitle=POLITICS%3A%20%202%2F19%2F10%20Quick%20Links"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_21910.php&amp;itemDate=2010-02-19%20%0A17%3A08%3A40&amp;itemTitle=POLITICS%3A%20%202%2F19%2F10%20Quick%20Links" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-19T12:08:40-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/baseball_hall_o_10.php">
+<title>BASEBALL:  Hall of Mags</title>
+<link>http://baseballcrank.com/archives2/2010/02/baseball_hall_o_10.php</link>
+<description><![CDATA[<p><a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2010/02/magadan_enters.html">Congratulations to Dave Magadan, who was inducted into the College Baseball Hall of Fame</a>.  No, I never thought I'd use "Dave Magadan" and "Hall of Fame" in the same sentence either, but as Pete Abraham notes, Magadan's college batting stats were otherworldly: a career .439 batting average and 188 RBI in 162 games.  His plate patience must have made Magadan just impossible to pitch to at that level.  (He also batted .323 as a minor leaguer).</p>
+
+<p><a href="http://www.baseball-reference.com/players/m/magadda01.shtml">Magadan's value as a major leaguer</a> was almost entirely in his impressive career .390 OBP, which ranks 99th all time.  In 16 big league seasons, only once (his last) did he fall below a .360 on base percentage (for contrast, Don Mattingly's <em>career</em> OBP was .358).  Magadan didn't do much else - he was slow, not much in the field either at third base or first, no power, and was often platooned (career 671 OPS against lefthanded pitchers is a major reason he never had 600 plate appearances in a season).  His best year came at age 27 in 1990, when he took over Keith Hernandez' job as the Mets first baseman, batted .328/.417/.457 and finished just 2 points short of leading the majors in batting (that distinction went to Eddie Murray, who batted .330 for the Dodgers, although Willie McGee won the NL batting title at .335 before being dealt to the A's).</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_hall_o_10.php&amp;itemDate=2010-02-19%20%0A16%3A55%3A02&amp;itemTitle=BASEBALL%3A%20%20Hall%20of%20Mags"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_hall_o_10.php&amp;itemDate=2010-02-19%20%0A16%3A55%3A02&amp;itemTitle=BASEBALL%3A%20%20Hall%20of%20Mags" /></a>
+]]></description>
+<dc:subject>Baseball 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-19T11:55:02-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_kudlow.php">
+<title>POLITICS:  Kudlow For Senate?</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_kudlow.php</link>
+<description><![CDATA[<p>I've suspected for some time now that the California Senate race against Barbara Boxer was basically the high-watermark Senate race for the GOP - that is, the toughest race that has a non-trivial chance to be winnable if everything breaks just right.  But the recent withdrawal of Evan Bayh from his own re-election race in Indiana (not as "safe" a seat as Boxer's, given Indiana's natural Republican tilt, but an entrenched incumbent with a $13 million warchest) is a reminder, as was Scott Brown's victory in Massachusetts, that you really never know where your opportunities are until you press them.</p>
+
+<p>The GOP in New York is already stretched fairly thin trying to fight a two-front war against what should be vulnerable candidates, Gov. David Paterson (who is basically doomed, but likely will be replaced as the Democratic nominee by the more formidable Attorney General Andrew Cuomo) and his Senate appointee, Kirsten Gillibrand (who should emerge successful from what nonetheless promises to be a vigorous challenge from former Tennessee Congressman Harold Ford).  Former Long Island Congressman Rick Lazio is the leading contender to be Republican nominee in the Governor's race, while <a href="http://blog.timesunion.com/capitol/archives/22673/cox-yes-im-hearing-from-other-senate-hopefuls/">the Senate field lacks even a candidate as mildly well-known as Lazio, assuming George Pataki resists entreaties to run</a>.</p>
+
+<p>Now, with polls showing the generally invulnerable-seeming Chuck Schumer bleeding popularity, Republicans may open a third front if they can <a href="http://www.nydailynews.com/blogs/dailypolitics/2010/02/when-larry-meets-serf.html#ixzz0ftZm42aT">talk longtime CNBC/National Review economics commentator Larry Kudlow into running</a>.  Kudlow was previously mentioned as a possible Senate contender against Chris Dodd before the field lined up in Connecticut, but New Yorkers aren't generally that picky about that sort of thing, at least in Senate races.  Kudlow would lock up the Conservative Party nod, which always helps.</p>
+
+<p>As the Daily News warns:</p>
+
+<blockquote>Schumer is a formidable opponent. While Wall Street might not be as happy with him as it once was, he still has managed to amass a whopping $19.3 million worth of campaign cash. 
+
+<p>Also, the polls have been mixed on New Yorkers' opinion of Schumer. A recent Q poll put his job approval rating at 58-30, while a Marist poll put him at just 47 percent - his lowest rating since April 2001.</blockquote></p>
+
+<p>Schumer is a relentless campaigner and, with the likely departure of Harry Reid, may end up running to be the leader of the Senate Democrats next spring.  I can't say I see a realistic path to beat him, from where we stand today, and Kudlow's a political novice.  That said, you gotta be in it to win it, as the saying goes; if something else comes out to drive Schumer down, you'd hate to not have a horse in the race.  And even if Schumer does end up winning handily, if he's forced to devote his time and money to running his own race instead of propping up Gillibrand and other Democrats around the country, Kudlow will have accomplished something.  </p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_kudlow.php&amp;itemDate=2010-02-18%20%0A17%3A26%3A09&amp;itemTitle=POLITICS%3A%20%20Kudlow%20For%20Senate%3F"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_kudlow.php&amp;itemDate=2010-02-18%20%0A17%3A26%3A09&amp;itemTitle=POLITICS%3A%20%20Kudlow%20For%20Senate%3F" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-18T12:26:09-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/baseball_where_3.php">
+<title>BASEBALL:  Where We Left Off</title>
+<link>http://baseballcrank.com/archives2/2010/02/baseball_where_3.php</link>
+<description><![CDATA[<p>Not that this should come as a huge surprise, but <a href="http://hardballtalk.nbcsports.com/2010/02/source-kelvim-escobar-may-be-seriously-hurt.html.php">Kelvim Escobar is apparently so injured that he can't grip a baseball right now</a>.</p>
+
+<p>Escobar's been a good pitcher in the past, and even if he's not a reliable workhorse, a sometimes-healthy Escobar would be an asset to the Mets.  But this report suggests that Will Carroll, who's been sounding alarms on the Escobar signing all winter, was right: the Mets' comically inept medical staff got suckered again into inking a guy who's maybe not going to pitch this season at all.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_where_3.php&amp;itemDate=2010-02-18%20%0A16%3A32%3A33&amp;itemTitle=BASEBALL%3A%20%20Where%20We%20Left%20Off"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_where_3.php&amp;itemDate=2010-02-18%20%0A16%3A32%3A33&amp;itemTitle=BASEBALL%3A%20%20Where%20We%20Left%20Off" /></a>
+]]></description>
+<dc:subject>Baseball 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-18T11:32:33-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_mugged.php">
+<title>POLITICS:  Mugged By Reality</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_mugged.php</link>
+<description><![CDATA[<p>I have not previously followed the work of San Francisco political reporter Benjamin Wachs of SF Weekly; apparently he's an increasingly cynical and disenchanted liberal following the ever-appalling doings of San Francisco city government.  Thanks to the <a href="https://twitter.com/jstrevino/status/9245183709">heads-up from Josh Trevino</a>, it's worth taking a little time to look over <a href="http://blogs.sfweekly.com/thesnitch/2010/02/sf_govinaction_stop_the_press.php">Wachs' uproariously acid farewell to his beat</a>, which practically defines "going out in a blaze of glory."  Seriously, read the whole thing.</p>
+
+<p>The real meat, though, is in a lengthier article by Wachs and Joe Eskenazi from December on <a href="http://www.sfweekly.com/2009-12-16/news/the-worst-run-big-city-in-the-u-s/1">how San Francisco is, in their view, "The Worst-Run Big City in the U.S."</a>:</p>
+
+<blockquote>It's time to face facts: San Francisco is spectacularly mismanaged and arguably the worst-run big city in America. This year's city budget is an astonishing $6.6 billion - more than twice the budget for the entire state of Idaho - for roughly 800,000 residents. Yet despite that stratospheric amount, San Francisco can't point to progress on many of the social issues it spends liberally to tackle - and no one is made to answer when the city comes up short.</blockquote>
+
+<p>The article is a long one, and filled with horrifying detail of the city's incompetence and dysfunction, like this one, which manages to combine reckless overspending, bait-and-switches with the voters, and head-poundingly foolish naivete in dealing with dangerous and violent people:</p>
+
+<blockquote>Back in 1999, San Francisco voters were pitched a $299 million bond to "save" Laguna Honda Hospital as a 1,200-bed facility for the city's frail, elderly population. Who doesn't want to help the frail and elderly? A decade later, the Department of Public Works project is still incomplete, its price tag has swelled by nearly $200 million, and the hospital is slated to hold only 780 beds - so the city is going massively overbudget to construct a hospital only 65 percent as large as promised, which is four years behind schedule.
+
+<p>Amazingly, this gets worse. After securing the bond funding to save Laguna Honda as a hospital for the elderly, the Department of Public Health began transferring younger, often dangerous and mentally ill patients there and mixing them among the old people. This went about as well as you'd think: <strong>A 2006 state and federal licensing survey noted numerous instances of elder abuse, staff abuse, and patients toting drugs, alcohol, and even loaded weapons. One patient was assaulted four times in four months; to address this problem, staff erected signs reading "No Hitting." (That didn't work.)</strong> To cap it off, elder activists now worry that a 2009 Department of Public Health-commissioned report will pave the way for even more relatively young, mentally ill patients heading to Laguna Honda. The massively overbudget, behind-schedule hospital may not even end up primarily serving the elderly population that voters were promised it would.</blockquote></p>
+
+<p>The accounts of shreiking outrage from nonprofits and unions at the idea of measuring results or holding people accountable are equally familiar.  For all of liberalism's pretensions to being "reality-based," the recipients of its largesse are remarkably shy about letting anybody test whether any of their ideas actually work.  All of this supports a conclusion that is wearyingly familiar to any observer of American big-city liberalism in action:</p>
+
+<blockquote>The intrusion of politics into government pushes the city to enter long-term labor contracts it obviously can't afford, and no one is held accountable. A belief that good intentions matter more than results leads to inordinate amounts of government responsibility being shunted to nonprofits whose only documented achievement is to lobby the city for money. Meanwhile, piles of reports on how to remedy these problems go unread. There's no outrage, and nobody is disciplined, so things don't get fixed.</blockquote>
+
+<p>Ask residents of Detroit, or Oakland, or Washington DC, or Memphis, or Baltimore, or pre-Giuliani New York, or pre-Katrina New Orleans, or any number of other big American cities, and you'll hear a similar refrain; San Francisco may well be the worst, but it's hardly alone.  And as Wachs and Eskenazi note, San Francisco can in some ways get away with things other cities with fewer natural advantages can't (see: Detroit).  That said, Wachs and Eskenazi have produced an unusually detailed and comprehensive indictment of their city's one-party government.  Read it and pass it on to anyone you know who hasn't yet digested why the rest of the country traditionally mistrusts giving more money and power to big-city liberals.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_mugged.php&amp;itemDate=2010-02-17%20%0A20%3A35%3A58&amp;itemTitle=POLITICS%3A%20%20Mugged%20By%20Reality"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_mugged.php&amp;itemDate=2010-02-17%20%0A20%3A35%3A58&amp;itemTitle=POLITICS%3A%20%20Mugged%20By%20Reality" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-17T15:35:58-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/baseball_it_tho.php">
+<title>BASEBALL:  It Tholes For Thee</title>
+<link>http://baseballcrank.com/archives2/2010/02/baseball_it_tho.php</link>
+<description><![CDATA[<p><a href="http://www.nypost.com/p/blogs/metsblog/report_thole_has_chance_to_be_mets_0wBS6uVP3lFUkfzyaFiGdP">Omar Minaya says the first thing he's said in months that made any sense</a>:</p>
+
+<blockquote>Josh Thole will compete with Omir Santos this spring training to be the Mets' starting catcher, GM Omar Minaya told NJ.com...."I think Thole is going to compete for a job in spring training," Minaya said. "We'll see how he plays coming off a very good year. He led the league in hitting in Venezuela (winter ball). With Thole, where is he? Do we rush him? Does he take the job?"</blockquote>
+
+<p>Maybe now we can dispense with the hand-wringing over the Mets lacking the money to sign a fourth-string catcher.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_it_tho.php&amp;itemDate=2010-02-16%20%0A20%3A21%3A22&amp;itemTitle=BASEBALL%3A%20%20It%20Tholes%20For%20Thee"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_it_tho.php&amp;itemDate=2010-02-16%20%0A20%3A21%3A22&amp;itemTitle=BASEBALL%3A%20%20It%20Tholes%20For%20Thee" /></a>
+]]></description>
+<dc:subject>Baseball 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-16T15:21:22-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/pop_culture_har_6.php">
+<title>POP CULTURE:  Harry Connick, Brian Setzer and the State of Swing</title>
+<link>http://baseballcrank.com/archives2/2010/02/pop_culture_har_6.php</link>
+<description><![CDATA[<p>In the fall of 2009, Harry Connick Jr. and the Brian Setzer Orchestra both came out with new albums - Connick's Your Songs, and Setzer's Songs from Lonely Avenue.  Both are professionally done albums, and neither will place among the best, or worst, recordings these mature, mid-career artists have made.  But the contrast between the two illustrates how Connick's recording career has gone astray after a great beginning, while Setzer gives his fans what they want.</p>
+
+<p>Once upon a time, Harry Connick was not just an exciting musician, but a nearly unique one.  A child-prodigy jazz pianist since age six, the son of the New Orleans DA burst on the national scene in the late 1980s, gaining national stature at age 22 with the double-platinum, Grammy-winning soundtrack for the romantic comedy classic When Harry Met Sally...  At the time, the world of traditional pop/Big Band/swing music had largely atrophied - there was still a mostly-aging audience for then-veteran traveling performers like Frank Sinatra, Tony Bennett, Andy Williams, Perry Como, etc., and that style of music was still vibrant on Broadway, but suddenly here we had a <em>young</em> crooner breathing new life and energy into the standards and - on albums like 1990's We Are In Love and 1991's Blue Light, Red Light - writing some new ones of his own.</p>
+
+<p>Connick's talent and flair helped sell the form to new generations of music fans.  Lots of people still listened to Sinatra even if they didn't otherwise go for the traditional pop sound.  Others, like me, had grown up listening to that kind of music - it's what my parents listened to, and was really all the music I knew until my older brother got me into rock around age 9 - and had a lingering affection for it.  Connick proved that a young artist making new music in the old style, with his brassy Big Band sound and retro-cool pompadour, could still sell records and make a name for himself.</p>
+
+<p>Then, on the heels of his successful 1993 Christmas album When My Heart Finds Christmas, Connick decided to take an unexpected turn.  Ditching the big band, he put out a New Orleans funk-rock album, 1994's She.  Not all his fans appreciated - I was him tour for the album at Jones Beach, and there were older fans who walked out when they heard the new material.  But matching Connick's vocals and piano with the funk-rock sound worked, and made its own distinctive and different sound.  He followed up with 1996's Star Turtle, a solid album if not as outstanding as She.  Approaching his 30th birthday, Connick had mastered three genres - the third being jazz piano - all of which tend to reward their masters with long careers.</p>
+
+<p>Unfortunately, it's been mostly downhill since then.  Connick's output since Star Turtle has been steady - two more Christmas albums, seven other vocal albums, plus instrumental albums, show scores - but he has never matched his promise either as a Big Band act or a funk-rock act.  Albums like 1999's Come By Me and 2004's Only You were dull and barely-listenable slow jazz.  He's spread himself thin, dividing his time with feature film and TV-series acting, raising a family, disaster-relief work after Katrina, even hosting a series on the Weather Channel.</p>
+
+<p><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=httpwwwbase06-20&o=1&p=8&l=as1&m=amazon&f=ifr&md=10FE9736YVPPT7A0FBG2&asins=B002DYJAJ8" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" align=right></iframe>Your Songs was supposed to be a return to a more mainstream sound for Connick, and at first glance, its 14 songs fit the bill, running the gamut from Sinatra standards like "All the Way" and "The Way You Look Tonight" to 70s pop like "Just the Way You Are," "(They Long To Be) Close To You," and "Your Song."  The album was the brainchild of legendary record executive and co-producer Clive Davis, <a href="http://www.vanityfair.com/online/oscars/2009/10/qa-clive-davis-on-singing-in-the-shower-and-the-coming-robot-revolution.html">who explains how they picked the songs</a>:</p>
+
+<blockquote>We embarked on this project together. Over a five- or six-month period, we'd meet every Wednesday afternoon for five or six hours and just listen to music, looking for the right songs. I felt it shouldn't just be old classic songs but also more recent composers, and that's why we included Billy Joel's "Just The Way You Are" and Elton John's "Your Song."</blockquote>
+
+<p>Well, <em>relatively</em> recent.  The good news is that the finished product is polished and pleasant to listen to - the songs are all professionally rendered with loving care, and Connick glides through standard after standard with good-natured ease.  It's Easy Listening at its easiest, and there's a place for that - I pop it on in the background while I work.</p>
+
+<p>The bad news is that Your Songs is yet another wasted opportunity.  Not one of Connick's renditions is likely to make anybody forget the previously definitive versions, or even place him on equal footing as a vocalist with Billy Joel or Elton John or Sinatra or Karen Carpenter or Roberta Flack.  He's just treading water, and he's not even doing it because he wanted to follow some artistic muse - it's an essentially commercial record.</p>
+
+<p>Part of the miscalculation in the album is Connick's singing style.  There remain two schools of crooning, the Frank Sinatra school and the Bing Crosby school.  Sinatra, at least once he matured as an adult artist, was legendary as an emotional <em>interpreter</em> of songs, the guy who could climb into the lyrics and make you <em>feel</em> them.  When you listened to the older Sinatra, you felt the miles in his voice.  That wasn't all his appeal - he also had that swaggering cool and of course the great voice - but the ability to mine the words of a song was the distinctive feature of his style of singing, and one reason why he remained popular even with the rock generation.</p>
+
+<p>Bing Crosby represented the apex of the opposite style, the smooth crooner who focused on making beautiful music to listen to.  You could get an emotional wallop from a Bing song as well, if it hit you right - his Christmas songs do that, the warmth of Crosby's voice being all the song needs - but the focus was on the smooth sound.</p>
+
+<p>Whatever doubt there may have been in his youth about whether Connick would ever develop into a Sinatra-style interpreter of songs, it's clear by now that he's remaining firmly in the Crosby camp.  There's no heartache or heartbreak in Your Songs, no sense of emotional vulnerability - Connick still sounds like a guy singing to impress on a first date, not a man baring his soul.  On the Big Band and funk-rock albums, that didn't matter much; the invigorating swing and the infectious groove were all he needed to set his sound apart and make great music.  But singing ballads, Connick exposes his limitations.</p>
+
+<p>An album of this sort is doubly frustrating because it's so unnecessary - anybody can sing these songs, or we could just listen to the originals.  By contrast, Connick, Setzer and Canadian singer Michael Buble are about the only male vocalists in the business with the chops to do justice to new Big Band albums and the major-label platform to get them heard.  Maybe he's just running out of ideas, but we can only hope that Connick does more with his talent on his next record.</p>
+
+<p><iframe src="http://rcm.amazon.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=httpwwwbase06-20&o=1&p=8&l=as1&m=amazon&f=ifr&md=10FE9736YVPPT7A0FBG2&asins=B002KCHBTO" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" align=right></iframe>Setzer's Songs from Lonely Avenue goes in the opposite direction.  The 50-year-old Setzer, of course, started as a throwback 50s rockabilly artist in the early 80s with the Stray Cats, and reinvented himself in the mid-90s through a novel fusing of that sound with Big Band/swing music on albums like 1998's The Dirty Boogie and 2000's Vavoom!  Setzer, too, has been away from making new music in his signature sound for a while - the past decade has been largely consumed with making Christmas records as well as 2007's Wolfgang's Big Night Out, a mostly instrumental record reworking classical tunes - but Songs from Lonely Avenue is a return to his wheelhouse, and the first album in which he wrote all original songs.</p>
+
+<p>The focus on original music means that Songs from Lonely Avenue faces the opposite challenge from Your Songs' excessive familiarity; it has none of the instantly recognizable classics that powered earlier Setzer albums, songs like Jump Jive an' Wail or Mack the Knife.  But in their place, it has a consistent film-noir-ish mood and fresh quality music all the way through.  The only questionable decision is putting two instrumentals - Mr. Jazzer Goes Surfin and Mr. Surfer Goes Jazzin - back-to-back in the middle of the album rather than separating them as thematic bookends.  Probably the best song on the album is the slightly bluesy, hard-luck saga Dimes in The Jar, and while Setzer's not really any more of a bluesy vocalist than Connick is, he brings his best Tin Pan Alley sound to the track.  And unlike Your Songs, which gives Connick only minimal opportunity to match his dazzling piano to his vocals, Songs from Lonely Avenue gives us plenty of Setzer's signature guitar work.</p>
+
+<p>Harry Connick Jr. could learn a few lessons from Brian Setzer - like not making records that don't mean a thing 'cause they ain't got that swing.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpop_culture_har_6.php&amp;itemDate=2010-02-16%20%0A17%3A59%3A04&amp;itemTitle=POP%20CULTURE%3A%20%20Harry%20Connick%2C%20Brian%20Setzer%20and%20the%20State%20of%20Swing"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpop_culture_har_6.php&amp;itemDate=2010-02-16%20%0A17%3A59%3A04&amp;itemTitle=POP%20CULTURE%3A%20%20Harry%20Connick%2C%20Brian%20Setzer%20and%20the%20State%20of%20Swing" /></a>
+]]></description>
+<dc:subject>Pop Culture</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-16T12:59:04-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/historypolitics_2.php">
+<title>HISTORY/POLITICS:  Madison Was Wise: Lessons From Federalist No. 62</title>
+<link>http://baseballcrank.com/archives2/2010/02/historypolitics_2.php</link>
+<description><![CDATA[<p><a href="http://baseballcrank.com/archives2/2010/02/politics_the_le_6.php">I wrote at some length earlier this week</a> on the crucial role of the legislative filibuster in preventing transitory legislative majorities from saddling the nation with permanent legislation of great complexity.  As with so many questions of great significance, the Founding Fathers had wise and useful foresight to offer on the dangers of frequent and complex changes in federal law.  <a href="http://www.constitution.org/fed/federa62.htm">Let's go to the words of James Madison in Federalist No. 62, his explanation of the virtues of the Senate</a>:</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fhistorypolitics_2.php&amp;itemDate=2010-02-14%20%0A00%3A06%3A40&amp;itemTitle=HISTORY%2FPOLITICS%3A%20%20Madison%20Was%20Wise%3A%20Lessons%20From%20Federalist%20No.%2062"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fhistorypolitics_2.php&amp;itemDate=2010-02-14%20%0A00%3A06%3A40&amp;itemTitle=HISTORY%2FPOLITICS%3A%20%20Madison%20Was%20Wise%3A%20Lessons%20From%20Federalist%20No.%2062" /></a>
+]]></description>
+<dc:subject>History</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-13T19:06:40-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/blog_moneytown.php">
+<title>BLOG:  Moneytown</title>
+<link>http://baseballcrank.com/archives2/2010/02/blog_moneytown.php</link>
+<description><![CDATA[<p><a href="http://www.nytimes.com/2009/02/08/fashion/08halfmill.html">The NY Times looks at an issue of pressing importance to its readers: how hard it is to get by in Manhattan on $500,000 a year</a>.  In fairness, the article is done with a sense of the absurdity of the question, and is pretty informative if you wondered how, exactly, people can end up feeling like they really are just getting by on that much money.  Of course, the single biggest line item is predictable:</p>
+
+<blockquote>If a person is married with two children, the weekly deductions <strong>on a $500,000 salary</strong> are: federal taxes, $2,645; Medicare, $139; state taxes, $682; and city, $372. With an annual Social Security tab of $6,621, <strong>the take-home pay is about $293,000</strong> annually...</blockquote>
+
+<p>Whatever you may think of the justice or efficiency of different tax rates, that's one seriously large bite.  It goes a ways to explaining why, in "New York...a new study from the Center for an Urban Future, a nonprofit research group in Manhattan, estimates it takes $123,322 to enjoy the same middle-class life as someone earning $50,000 in Houston".</p>
+
+<p>Compared to my own living expenses in Queens and experience with Catholic school tuition, I can see where some of the more astronomical expenses are; $192,000 a year ($16,000/month) for a three-bedroom apartment is obscene even compared to the cost of home ownership inside City limits, and some of the travel, wardrobe and other expenses listed are truly hard to get my head around.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fblog_moneytown.php&amp;itemDate=2010-02-12%20%0A00%3A49%3A18&amp;itemTitle=BLOG%3A%20%20Moneytown"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fblog_moneytown.php&amp;itemDate=2010-02-12%20%0A00%3A49%3A18&amp;itemTitle=BLOG%3A%20%20Moneytown" /></a>
+]]></description>
+<dc:subject>Blog 2006-09</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-11T19:49:18-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/politics_so_wha.php">
+<title>POLITICS:  So, What Did You Do?</title>
+<link>http://baseballcrank.com/archives2/2010/02/politics_so_wha.php</link>
+<description><![CDATA[<p>America's 42nd president, Bill Clinton, was reportedly hospitalized with chest pains this afternoon in New York.  Hopefully he'll be fine, but naturally any threat to his health puts one in mind of the man's legacy as a two-term president.</p>
+
+<p>What struck me is this:  when he was president, there was endless debate about Bill Clinton.  Was he a liberal at heart who tacked to the center for pragmatic reasons, or was he essentially a moderate?  Was he wasting his prodigious political talents, or was campaigning all he really knew to do well anyway?  Did he revive liberalism from its decline, or validate the Reagan Revolution?</p>
+
+<p>But nine years after he left office, as his presidency begins to recede into history and his party has passed to new leadership, this much is clear:  <em>it doesn't matter anymore</em> what Clinton's intentions were, or what his talents were, or what he believed in.  It doesn't matter anymore who was up or who was down in his Administration, or who leaked what to which newspaper, or how he went about making decisions.  It doesn't matter who the public blamed or what the polls said.  It doesn't matter what Clinton said, either - we remember a few stock phrases (other than the embarrassing ones about his various scandals, probably his most enduring line was his campaign's standing reminder to then-candidate Clinton that "It's the economy, stupid").</p>
+
+<p>What matters from the Clinton Administration is what the president and his Administration <em>did</em>, and what it failed to do.  Thus, for example, Clinton's fiscal and economic legacy was not Hillarycare or the BTU tax, which went nowhere, nor was it the Contract with America, but rather an essentially centrist set of compromises with the GOP that yielded income tax hikes, capital gains tax cuts, welfare reform, fits of spending restraint but few spending cuts, major free trade agreements like NAFTA and GATT, and a series of both regulatory and deregulatory bills on the workplace, private securities litigation, and the financial markets.  The book isn't closed yet on the ripples from that era, but the decisions made, the bills passed, the judges appointed, the wars fought and unfought, etc., are done, and as historians debate President Clinton's legacy, that is what they will examine.  The same will be true of George W. Bush.</p>
+
+<p>And the same will be true of Barack Obama.  Obama is known for his eloquence, but little he says is remembered the next day, and still less will live on after him.  Obama spends much of his days pointing fingers of blame - at the Bush Administration, at Congressional Republicans - but blame is not a legacy.  Obama's true intentions are subject to as much debate as Clinton's or George W. Bush's, or for that matter FDR's or Lincoln's, but only his record will really matter.</p>
+
+<p>Which ought to give him pause.  Obama entered office with an unprecedented base of support in Congress - even FDR didn't have a filibuster-proof majority in his first year in office - and yet it is hard to think of a modern two-term president who accomplished less, either legislatively or in international affairs, than Obama in his first year.  Even Clinton, for all the frustrations of his first year in office, got his tax hike package passed.</p>
+
+<p>Unlike Clinton or Bush, Obama's political obituary is far from written.  But we should not lose sight of the fact that when it is, all the rhetoric and the news cycles will pale in comparison to that awful question: what did you do with the time that was given to you?</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_so_wha.php&amp;itemDate=2010-02-11%20%0A23%3A06%3A45&amp;itemTitle=POLITICS%3A%20%20So%2C%20What%20Did%20You%20Do%3F"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fpolitics_so_wha.php&amp;itemDate=2010-02-11%20%0A23%3A06%3A45&amp;itemTitle=POLITICS%3A%20%20So%2C%20What%20Did%20You%20Do%3F" /></a>
+]]></description>
+<dc:subject>Politics 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-11T18:06:45-05:00</dc:date>
+</item>
+<item rdf:about="http://baseballcrank.com/archives2/2010/02/baseball_jake_i.php">
+<title>BASEBALL:  Jake Is Back</title>
+<link>http://baseballcrank.com/archives2/2010/02/baseball_jake_i.php</link>
+<description><![CDATA[<p>The Mets have re-signed Mike Jacobs to a minor league deal.  Which would make a lot more sense if not for the fact that <a href="http://www.baseball-reference.com/players/split.cgi?n1=murphda08&year=Career&t=b">Daniel Murphy</a>, the incumbent 1B (cringe) is lefthanded.  <a href="http://www.baseball-reference.com/players/split.cgi?n1=jacobmi02&year=Career&t=b">For his career</a>, Jacobs has hit an acceptable  .263/.325/.505 against righthanded pitching - enough power to kinda sorta justify the crummy OBP - but a horrifying .221/.269/.374 against lefties.</p>
+
+<p>If Murphy's the first base option, that probably makes Jacobs a platoon pinch hitter.</p>]]><![CDATA[
+<br /><a 
+href="http://www.pheedo.com/click.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_jake_i.php&amp;itemDate=2010-02-10%20%0A03%3A33%3A23&amp;itemTitle=BASEBALL%3A%20%20Jake%20Is%20Back"><img border="0" 
+src="http://www.pheedo.com/img.phdo?feedUrl=http%3A//www.baseballcrank.com/index.rdf&itemLink=http%3A%2F%2Fbaseballcrank.com%2Farchives2%2F2010%2F02%2Fbaseball_jake_i.php&amp;itemDate=2010-02-10%20%0A03%3A33%3A23&amp;itemTitle=BASEBALL%3A%20%20Jake%20Is%20Back" /></a>
+]]></description>
+<dc:subject>Baseball 2010</dc:subject>
+<dc:creator>Baseball Crank</dc:creator>
+<dc:date>2010-02-09T22:33:23-05:00</dc:date>
+</item>
+
+
+</rdf:RDF>

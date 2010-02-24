@@ -4,6 +4,6 @@
     = stylesheet_link_tag 'application'
   %body
     #header
-      = link_to 'Add Feed', new_feed_path
+      = link_to 'Add Feed', new_feed_path, :id => 'add-feed'
       = link_to 'My Feeds', posts_path
     = yield

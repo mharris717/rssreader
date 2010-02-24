@@ -40,6 +40,15 @@ Rails::Initializer.run do |config|
   config.gem 'inherited_resources'
   config.gem 'haml'
   config.gem 'simple-rss'
+  
+  if RAILS_ENV == 'test'
+    config.gem "rspec", :lib => 'spec'
+    config.gem "rspec-rails", :lib => 'spec/rails'
+    config.gem 'notahat-machinist', :lib => 'machinist', :source => 'http://gems.github.com'
+    config.gem 'andand'
+    # config.gem 'faker'
+    config.gem 'fattr'
+  end
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]

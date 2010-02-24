@@ -3,3 +3,7 @@
     left: 300px;
     top: 0px;
 }
+
+#left .read {
+    display: none;
+}

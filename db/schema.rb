@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20100224031801) do
     t.string   "url"
     t.string   "title"
     t.text     "content"
+    t.datetime "post_dt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

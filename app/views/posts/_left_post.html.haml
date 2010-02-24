@@ -1,0 +1,2 @@
+- post = left_post
+%div{'class' => "post "+(post.read ? 'read' : 'unread'), 'data-dt' => post.post_dt}= link_to post.title, post, :class => 'post-link'

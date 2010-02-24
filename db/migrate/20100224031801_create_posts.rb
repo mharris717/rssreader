@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :url
       t.string :title
       t.text :content
+      t.datetime :post_dt
       t.timestamps
     end
   end
