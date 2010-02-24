@@ -1,0 +1,12 @@
+#left{:style => "width: 300px"}
+  - current_user.feeds.each do |feed|
+  - feed.load_feed!
+    %h3
+      = feed.title
+      = link_to '-', feed, :method => 'delete'
+    %br
+    - feed.posts.unread.each do |post|
+      = link_to post.title, post, :class => 'post-link'
+      %br
+#right
+  right
