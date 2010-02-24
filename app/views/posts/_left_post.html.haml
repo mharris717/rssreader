@@ -1,2 +1,4 @@
 - post = left_post
-%div{'class' => "post "+(post.read ? 'read' : 'unread'), 'data-dt' => post.post_dt}= link_to post.title, post, :class => 'post-link'
+%div{'class' => "post "+(post.read ? 'read' : 'unread'), 'data-dt' => post.post_dt, 'data-feed-title' => post.feed.title, 'data-id' => post.id}
+  .post-feed-title= post.feed.title
+  = link_to post.title.strip, post, :class => 'post-link'

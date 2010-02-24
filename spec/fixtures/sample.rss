@@ -1,0 +1,518 @@
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="hub" href="http://tumblr.superfeedr.com/" /><description>Open source moves fast. Keep up.
+ 
+Brought to you by Adam and Wynn,  The Changelog is what’s fresh and new in open source.
+</description><title>The Changelog - Open Source moves fast. Keep up.</title><generator>Tumblr (3.0; @thechangelog)</generator><link>http://thechangelog.com/</link><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/thechangelog" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="thechangelog" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><feedburner:emailServiceId xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">thechangelog</feedburner:emailServiceId><feedburner:feedburnerHostname xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://feedburner.google.com</feedburner:feedburnerHostname><item><title>Ajax.org O3: Collection of C++ components exposed through a JavaScript API</title><description>&lt;a href="http://github.com/ajaxorg/o3"&gt;Ajax.org O3: Collection of C++ components exposed through a JavaScript API&lt;/a&gt;: &lt;p&gt;While at &lt;a href="http://events.carsonified.com/fowa/2010/miami/"&gt;FOWA 2010&lt;/a&gt;, &lt;a href="http://adamstacoviak.com/"&gt;Adam Stacoviak&lt;/a&gt; caught up with the guys and gals at &lt;a href="http://ajax.org"&gt;Ajax.org&lt;/a&gt;. And since we’ve been on this Node.js kick for a bit now, maybe it’s time we introduce you to the guys at Ajax.org and what they’ve been doing with C++ and JavaScript to make the Ajax.org Platform APF and Ajax.org O3 provide developers with easy to use libraries and tools in order to make the browser the dominant application platform.&lt;/p&gt;
+ 
+&lt;p&gt;Definitely check out their codes and follow them on Twitter &lt;a href="http://twitter.com/ajax_org"&gt;@ajax_org&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;img src="http://farm5.static.flickr.com/4041/4379158691_4739255901.jpg" title="Ajax.org Crew" class="centered"/&gt;&lt;/p&gt;
+ 
+&lt;p&gt;Photo courtesy of our friend &lt;a href="http://twitter.com/kMilden"&gt;Kevin Milden&lt;/a&gt; of &lt;a href="http://newleaders.com/"&gt;New Leaders&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;Oh, and for those VC’s or groups that provide funding to companies that are developing Open Source software, &lt;a href="http://twitter.com/javruben"&gt;Rueben&lt;/a&gt; (CEO) and &lt;a href="http://twitter.com/rikarends"&gt;Rik&lt;/a&gt; (CTO) are looking to gain funding to take them to the next level.&lt;/p&gt;
+ 
+&lt;h4&gt;Ajax.org O3&lt;/h4&gt;
+ 
+&lt;p&gt;&lt;a href="http://www.ajax.org/#o3"&gt;Ajax.org O3&lt;/a&gt; is a collection of C++ components which are exposed through a JavaScript API. On top of that it’s also a library that allows you to create those components. Ajax.org O3 allows you to run the same code anywhere:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;Optimized for speed and security&lt;/li&gt;
+&lt;li&gt;Same API’s everywhere&lt;/li&gt;
+&lt;li&gt;Runtime environments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;object width="400" height="250"&gt;&lt;param name="allowfullscreen" value="true"&gt;
+&lt;param name="allowscriptaccess" value="always"&gt;
+&lt;param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7940082&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1"&gt;
+&lt;embed src="http://vimeo.com/moogaloop.swf?clip_id=7940082&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="250"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;object width="400" height="250"&gt;&lt;param name="allowfullscreen" value="true"&gt;
+&lt;param name="allowscriptaccess" value="always"&gt;
+&lt;param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=7964239&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1"&gt;
+&lt;embed src="http://vimeo.com/moogaloop.swf?clip_id=7964239&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="250"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+ 
+&lt;h4&gt;Example of the O3 File API&lt;/h4&gt;
+ 
+&lt;pre&gt;&lt;code&gt;var root = o3.fs;
+var files = root.children;
+ 
+//Iterating the files in a folder
+o3.out("Current dir: " + root.path);
+files.each(function(file){
+    o3.out([
+        file.name, 
+        file.size, 
+        file.modifiedDate
+    ].join(", "));
+});
+ 
+//Read a file
+o3.out(root.get("file.txt").data);
+ 
+//Create and write a new (or existing) file
+root.get("newfile.txt").data = "test";
+ 
+//Append to a file
+if (root.get("newfile.txt").exist)
+    root.get("newfile.txt").data += "test";
+ 
+//Write binary data
+var img = new o3.image();
+//fill img data here
+root.get("photo.jpg").data = img;
+ 
+//Or access the blob directly:
+root.get("photo.jpg").blob = img.blob;
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;h4&gt;Ajax.org Platform&lt;/h4&gt;
+ 
+&lt;p&gt;&lt;a href="http://www.ajax.org/#home"&gt;Ajax.org Platform&lt;/a&gt; is a pure javascript application framework for creating real-time collaborative applications that run in the browser. Ajax.org Platform radically changes the way you write applications:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;Live markup&lt;/li&gt;
+&lt;li&gt;Markup and JSON api&lt;/li&gt;
+&lt;li&gt;Collaborative backbone&lt;/li&gt;
+&lt;li&gt;100% open source software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[&lt;a href="http://www.ajax.org/"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://github.com/ajaxorg/o3"&gt;O3 on GitHub&lt;/a&gt;] [&lt;a href="http://www.ajax.org/#o3"&gt;Ajax.org O3&lt;/a&gt;] 
+[&lt;a href="http://www.ajax.org/#home"&gt;Ajax.org Platform&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=U9KWicDlCZI:lszoKFqYPNs:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=U9KWicDlCZI:lszoKFqYPNs:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=U9KWicDlCZI:lszoKFqYPNs:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=U9KWicDlCZI:lszoKFqYPNs:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=U9KWicDlCZI:lszoKFqYPNs:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=U9KWicDlCZI:lszoKFqYPNs:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=U9KWicDlCZI:lszoKFqYPNs:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/406745517</link><guid>http://thechangelog.com/post/406745517</guid><pubDate>Tue, 23 Feb 2010 03:49:00 -0600</pubDate><category>github</category><category>javascript</category><category>server-side</category><enclosure url="http://vimeo.com/moogaloop.swf?clip_id=7940082&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" length="-1" type="application/x-shockwave-flash" /><media:content url="http://vimeo.com/moogaloop.swf?clip_id=7940082&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" /></item><item><title>Episode 0.1.4 - Andy Gross and Sean Cribbs on Riak</title><description>&lt;script src="http://www.buzzsprout.com/105/2703-episode-0-1-4-andy-gross-and-sean-cribbs-on-riak.js?player=small" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;Adam and Wynn caught up with &lt;a href="http://twitter.com/argv0"&gt;Andy Gross&lt;/a&gt; from &lt;a href="http://basho.com"&gt;Basho&lt;/a&gt; and &lt;a href="http://seancribbs.com"&gt;Sean Cribbs&lt;/a&gt;, a freelance Ruby developer, to discuss &lt;a href="http://riak.basho.com"&gt;Riak&lt;/a&gt;, the new Erlang-based NoSQL store and &lt;a href="http://seancribbs.github.com/ripple/"&gt;Ripple&lt;/a&gt;, Sean’s new Ruby wrapper for Riak.&lt;/p&gt;
+ 
+&lt;p&gt;Items mentioned in the show:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://thechangelog.com/post/383049531/ripple-ruby-client-for-riak"&gt;Ripple&lt;/a&gt; New Ruby wrapper for Riak&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://seancribbs.com/tech/2010/02/06/why-riak-should-power-your-next-rails-app"&gt;Link walking in Riak&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://radiantcms.org"&gt;RadiantCMS&lt;/a&gt; Ruby-powered Content Management System&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=rYd6R0sCOiA:ow1n9Mq_42I:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=rYd6R0sCOiA:ow1n9Mq_42I:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=rYd6R0sCOiA:ow1n9Mq_42I:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=rYd6R0sCOiA:ow1n9Mq_42I:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=rYd6R0sCOiA:ow1n9Mq_42I:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=rYd6R0sCOiA:ow1n9Mq_42I:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=rYd6R0sCOiA:ow1n9Mq_42I:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/397364245</link><guid>http://thechangelog.com/post/397364245</guid><pubDate>Thu, 18 Feb 2010 17:35:23 -0600</pubDate><category>audio</category><category>nosql</category><category>ruby</category><category>riak</category><category>json</category><category>erlang</category><category>rest</category><category>scaling</category></item><item><title>Tip: Use filters when tailing The Changelog</title><description>&lt;p&gt;It seems our settings icon on &lt;a href="http://tail.thechangelog.com"&gt;http://tail.thechangelog.com&lt;/a&gt; is a bit too subtle so we recorded a quick &lt;a href="http://screenr.com/Dkx"&gt;screencast&lt;/a&gt; to show you how you can filter the GitHub firehose to see only the open source events you actually care about.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0" width="560" height="345"&gt;&lt;param name="movie" value="http://screenr.com/Content/assets/screenr_1116090935.swf"&gt;
+&lt;param name="flashvars" value="i=48205"&gt;
+&lt;param name="allowFullScreen" value="true"&gt;
+&lt;embed src="http://screenr.com/Content/assets/screenr_1116090935.swf" flashvars="i=48205" allowfullscreen="true" width="560" height="345" pluginspage="http://www.macromedia.com/go/getflashplayer"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=_dVrjx2UDnc:PyKgNOb0kkA:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=_dVrjx2UDnc:PyKgNOb0kkA:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=_dVrjx2UDnc:PyKgNOb0kkA:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=_dVrjx2UDnc:PyKgNOb0kkA:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=_dVrjx2UDnc:PyKgNOb0kkA:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=_dVrjx2UDnc:PyKgNOb0kkA:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=_dVrjx2UDnc:PyKgNOb0kkA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/396772482</link><guid>http://thechangelog.com/post/396772482</guid><pubDate>Thu, 18 Feb 2010 10:19:00 -0600</pubDate><category>screencast</category><category>tail</category><category>video</category><enclosure url="http://screenr.com/Content/assets/screenr_1116090935.swf" length="53065" type="application/x-shockwave-flash" /><media:content url="http://screenr.com/Content/assets/screenr_1116090935.swf" fileSize="53065" type="application/x-shockwave-flash" /></item><item><title>do - simple async JavaScript library</title><description>&lt;a href="http://github.com/creationix/do"&gt;do - simple async JavaScript library&lt;/a&gt;: &lt;p&gt;At the risk of having to change our name to Changelog.js &lt;a href="http://twitter.com/jsconf/status/9237686006"&gt;as some have suggested&lt;/a&gt;, we feature another cool JavaScript library. &lt;a href="http://github.com/creationix/do"&gt;Do&lt;/a&gt; from &lt;a href="http://twitter.com/creationix"&gt;Tim Caswell&lt;/a&gt; who brought us the &lt;a href="http://howtonode.org/"&gt;How To Node blog&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;So what does Do do? First, it adds higher level processing for &lt;a href="http://boshi.inimino.org/3box/asof/1263250371783/fileIO/README.html"&gt;continuables&lt;/a&gt;, the callback pattern for asynchronous processing in Node.js.&lt;/p&gt;
+ 
+&lt;p&gt;As Tim explains:&lt;/p&gt;
+ 
+&lt;blockquote&gt;
+  &lt;p&gt;A continuable is a function that returns a curried version of itself instead of a result directly. The last two arguments are the callback and the errback. So a continuable won’t execute until you attach callbacks to it:&lt;/p&gt;
+&lt;/blockquote&gt;
+ 
+&lt;pre&gt;&lt;code&gt;function divide(a, b) { return function (callback, errback) {
+  // the timeout it to prove that we're working asynchronously
+  setTimeout(function () {
+    if (b === 0) {
+      errback(new Error("Cannot divide by 0"));
+    } else {
+      callback(a / b);
+    }
+  }); 
+}}
+ 
+ 
+divide(100, 10)(function (result) {
+  puts("the result is " + result);
+}, function (error) {
+  throw error;
+});
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;Building on continuables, Do adds two more important features.&lt;/p&gt;
+ 
+&lt;h4&gt;Do.parallel&lt;/h4&gt;
+ 
+&lt;p&gt;‘Do.parallel’ takes an array of actions and runs them in parallel&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;Do.parallel(
+  Do.read("/etc/passwd"),
+  Do.read(__filename)
+)(function (passwd, self) {
+  // Do something
+}, error_handler);
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;h4&gt;Do.chain&lt;/h4&gt;
+ 
+&lt;p&gt;&lt;code&gt;Do.chain&lt;/code&gt; chains several actions together in the familiar jQuery style:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;Do.chain(
+  Do.read(__filename),
+  function (text) { 
+    return Do.save("newfile", text);
+  },
+  function () {
+    return Do.stat("newfile");
+  }
+)(function (stat) {
+  // Do something
+}, error_handler);
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;Check out the &lt;a href="http://github.com/creationix/do#readme"&gt;README&lt;/a&gt; for full docs as well as other functions in Do.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/creationix/do"&gt;Source on GitHub&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=sHDOlv-VlmA:A_9zA03SdOQ:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=sHDOlv-VlmA:A_9zA03SdOQ:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=sHDOlv-VlmA:A_9zA03SdOQ:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=sHDOlv-VlmA:A_9zA03SdOQ:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=sHDOlv-VlmA:A_9zA03SdOQ:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=sHDOlv-VlmA:A_9zA03SdOQ:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=sHDOlv-VlmA:A_9zA03SdOQ:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/396676100</link><guid>http://thechangelog.com/post/396676100</guid><pubDate>Thu, 18 Feb 2010 09:01:00 -0600</pubDate><category>github</category><category>javascript</category><category>nodejs</category><category>async</category><category>libraries</category></item><item><title>SimFinger - make awesome screencasts of your mobile apps on your Mac</title><description>&lt;a href="http://github.com/atebits/SimFinger"&gt;SimFinger - make awesome screencasts of your mobile apps on your Mac&lt;/a&gt;: &lt;p&gt;&lt;a href="http://github.com/atebits/SimFinger"&gt;SimFinger&lt;/a&gt; is a screencasting tool from Loren Brichter aka &lt;a href="http://twitter.com/atebits"&gt;@atebits&lt;/a&gt;, author of popular apps like &lt;a href="http://www.atebits.com/tweetie-iphone/"&gt;Tweetie&lt;/a&gt; for the iPhone as well as the &lt;a href="http://www.atebits.com/tweetie-mac/"&gt;desktop&lt;/a&gt;. SimFinger is a Cocoa app for the Mac that adds some polish to your mobile app screencasts by providing:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;A frame that sits on top of the simulator and adds shine and an iPhone 3G look&lt;/li&gt;
+&lt;li&gt;A halo around the pointer to indicate touch events&lt;/li&gt;
+&lt;li&gt;Ability to set the carrier text &lt;/li&gt;
+&lt;li&gt;Fake apps (and dock badge counts) so that your app isn’t so lonely on the home screen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notice that we say ‘mobile apps’ and not ‘iPhone’ or ‘Touch’ apps because a &lt;a href="http://github.com/kreutz/SimFinger"&gt;fork&lt;/a&gt; from &lt;a href="http://github.com/kreutz"&gt;@kreutz&lt;/a&gt; adds support for the PalmPre simulator.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/atebits/SimFinger"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://blog.atebits.com/2009/03/not-your-average-iphone-screencast/"&gt;Original blog post&lt;/a&gt;] [&lt;a href="http://github.com/kreutz/SimFinger"&gt;Palm fork&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=Wur3VkxjRcU:tZawi4p-Jpo:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=Wur3VkxjRcU:tZawi4p-Jpo:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=Wur3VkxjRcU:tZawi4p-Jpo:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=Wur3VkxjRcU:tZawi4p-Jpo:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=Wur3VkxjRcU:tZawi4p-Jpo:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=Wur3VkxjRcU:tZawi4p-Jpo:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=Wur3VkxjRcU:tZawi4p-Jpo:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/395903571</link><guid>http://thechangelog.com/post/395903571</guid><pubDate>Wed, 17 Feb 2010 21:33:49 -0600</pubDate><category>github</category><category>iphone</category><category>screencasting</category><category>tools</category><category>palm</category><category>palm-pre</category><category>mac</category><category>cocoa</category></item><item><title>cradle - A high-level, caching, CouchDB client for Node.js</title><description>&lt;a href="http://github.com/cloudhead/cradle"&gt;cradle - A high-level, caching, CouchDB client for Node.js&lt;/a&gt;: &lt;p&gt;Intended to be a higher-level API on top of Couch, &lt;a href="http://github.com/cloudhead/cradle"&gt;cradle&lt;/a&gt; from &lt;a href="http://github.com/cloudhead"&gt;Alexis Sellier&lt;/a&gt; tries to bridge what’s best about &lt;a href="http://couchdb.apache.org/"&gt;CouchDB&lt;/a&gt; and &lt;a href="http://nodejs.org"&gt;Node.js&lt;/a&gt;. Cradle comes with built-in write-through caching to boost speed and easier updates and deletes.&lt;/p&gt;
+ 
+&lt;p&gt;Most methods from CouchDB map one-to-one with Cradle although some like &lt;code&gt;save&lt;/code&gt; can orchestrate multiple operations.&lt;/p&gt;
+ 
+&lt;p&gt;From the &lt;a href="http://github.com/cloudhead/cradle#readme"&gt;README&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;var cradle = require('cradle');
+var db = new(cradle.Connection).database('starwars');
+ 
+db.get('vador').addCallback(function (doc) {
+    doc.name; // 'Darth Vador'
+    assert.equal(doc.force, 'dark');
+});
+ 
+db.save('skywalker', {
+    force: 'light',
+    name: 'Luke Skywalker'
+}).addCallback(function (res) {
+    // Handle success
+}).addErrback(function (res) {
+    // Handle error
+});
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/cloudhead/cradle"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://twitter.com/cloudhead"&gt;Follow Alexis Sellier on Twitter&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=ejl27axXEp8:-uoeHj8ylYw:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=ejl27axXEp8:-uoeHj8ylYw:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=ejl27axXEp8:-uoeHj8ylYw:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=ejl27axXEp8:-uoeHj8ylYw:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=ejl27axXEp8:-uoeHj8ylYw:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=ejl27axXEp8:-uoeHj8ylYw:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=ejl27axXEp8:-uoeHj8ylYw:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/393272039</link><guid>http://thechangelog.com/post/393272039</guid><pubDate>Tue, 16 Feb 2010 14:36:00 -0600</pubDate><category>github</category><category>nodejs</category><category>javascript</category><category>couchdb</category><category>rest</category></item><item><title>Rippin' off Python w/ Chris Wanstrath </title><description>&lt;p&gt;&lt;embed src="http://rubyconf2009.confreaks.com/player.swf" height="291" width="490" allowscriptaccess="always" allowfullscreen="true" flashvars="image=images%2F20-nov-2009-16-20-rippin-off-python-chris-wanstrath-preview.png&amp;file=http%3A%2F%2Frubyconf2009.confreaks.com%2Fvideos%2F20-nov-2009-16-20-rippin-off-python-chris-wanstrath-small.mp4&amp;plugins=viral-1"&gt;&lt;/embed&gt;&lt;/p&gt;
+ 
+&lt;p&gt;A great talk from &lt;a href="http://github.com/defunkt"&gt;Chris Wanstrath&lt;/a&gt; (&lt;a href="http://twitter.com/defunkt"&gt;@defunkt&lt;/a&gt;) on &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt; from a &lt;a href="http://www.ruby-lang.org/en/"&gt;Rubyist’s&lt;/a&gt; perspective.&lt;/p&gt;
+ 
+&lt;p&gt;We too favor awesome docs for the projects that we feature, peps seem like an awesome concept to support (seriously), and hacking side-by-side with two languages is a nice way to get started with a new language…&lt;/p&gt;
+ 
+&lt;p&gt;Great work Chris on your journey through the various languages you’ve been able to have fun with. We appreciate you sharing what you’ve learned along the way.&lt;/p&gt;
+ 
+&lt;p&gt;Also, check out &lt;a href="http://bit.ly/tcl-0-1-1"&gt;Episode 0.1.0&lt;/a&gt; w/ Chris.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=fktel1C2jsg:XAZ25db8utg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=fktel1C2jsg:XAZ25db8utg:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=fktel1C2jsg:XAZ25db8utg:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=fktel1C2jsg:XAZ25db8utg:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=fktel1C2jsg:XAZ25db8utg:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=fktel1C2jsg:XAZ25db8utg:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=fktel1C2jsg:XAZ25db8utg:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/391445075</link><guid>http://thechangelog.com/post/391445075</guid><pubDate>Mon, 15 Feb 2010 15:49:00 -0600</pubDate><category>talks</category><category>video</category><category>ruby</category><category>python</category><enclosure url="http://rubyconf2009.confreaks.com/player.swf" length="41390" type="application/x-shockwave-flash" /><media:content url="http://rubyconf2009.confreaks.com/player.swf" fileSize="41390" type="application/x-shockwave-flash" /></item><item><title>Tradui: Civic Hacking for Haiti</title><description>&lt;a href="http://github.com/brendanlim/Tradui"&gt;Tradui: Civic Hacking for Haiti&lt;/a&gt;: &lt;p&gt;&lt;a href="http://www.flickr.com/photos/thechangelog/4358213849/" title="Tradui iPhone Screenshot by The Changelog, on Flickr"&gt;&lt;img src="http://farm5.static.flickr.com/4040/4358213849_2852da2bac_o.jpg" width="300" height="523" class="centered" alt="Tradui iPhone Screenshot"/&gt;&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;p&gt;Across the United States there has been a gathering of people looking for ways to ease the suffering caused by the devastating earthquake that struck Haiti on Jauary 12th, 2010. Three members of &lt;a href="http://intridea.com/"&gt;Intridea&lt;/a&gt;, &lt;a href="http://twitter.com/cselmer"&gt;Chris Selmer&lt;/a&gt;, &lt;a href="http://twitter.com/brendanlim"&gt;Brendan Lim&lt;/a&gt; and &lt;a href="http://twitter.com/jonathannelson"&gt;Jonathan Nelson&lt;/a&gt; stepped up to help with the efforts towards those in need in Haiti by heading to DC to take part in &lt;a href="http://crisiscampdc.ning.com/"&gt;Crisis Camp DC&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;Their “civic hacking” efforts in DC lead them to develop &lt;a href="http://traduiapp.com/"&gt;Tradui&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;Tradui is pronounced: Trad - eww - ee&lt;/p&gt;
+ 
+&lt;p&gt;Tradui, Creole for “translate”, is an application for the iPhone and Android platforms to translate Creole to English and English to Creole and was built by &lt;a href="http://www.intridea.com/"&gt;Intridea&lt;/a&gt; for &lt;a href="http://crisiscommons.org/"&gt;Crisis Commons&lt;/a&gt; as part of Crisis Camp DC. Additional work was also done by members of CrisisCamp Haiti on 1/23 in DC, Boston, and Boulder.&lt;/p&gt;
+ 
+&lt;h4&gt;Built in 15 man hours w/ Appcelerator&lt;/h4&gt;
+ 
+&lt;p&gt;We spoke with Brendan Lim, Intridea’s mobile application extraordinaire who lead the development of Tradui.&lt;/p&gt;
+ 
+&lt;blockquote&gt;
+  &lt;p&gt;“From concept to completion, the development for the actual mobile application took 15 man hours. Our biggest initial hurdle to get over was getting our hands on a good dictionary. Then we had to parse it out.”&lt;/p&gt;
+&lt;/blockquote&gt;
+ 
+&lt;p&gt;When asked how they were able to keep the development time so short, Brendan replied…&lt;/p&gt;
+ 
+&lt;blockquote&gt;
+  &lt;p&gt;“That’s the beauty of using &lt;a href="http://www.appcelerator.com/"&gt;Appcelerator’s Titanium Development Platform&lt;/a&gt;. We can do builds super quick for both the iPhone and Android platforms.”&lt;/p&gt;
+&lt;/blockquote&gt;
+ 
+&lt;p&gt;If you want to learn more about &lt;a href="http://www.appcelerator.com/"&gt;Appcelerator&lt;/a&gt; and their exciting open source development platforms, make a note to go back and listen to &lt;a href="http://bit.ly/tcl-0-0-8"&gt;Episode 0.0.8 with Marshall Culpepper from Appcelerator&lt;/a&gt; after reading this.&lt;/p&gt;
+ 
+&lt;p&gt;The data for Tradui’s Creole to English and English to Creole dictionary was extracted with permission from the HaitiSurf Creole to English Dictionary. Each and every one of the translation capabilities inside Tradui are available offline. That means that no data plans are required. It is completely offline.&lt;/p&gt;
+ 
+&lt;h4&gt;It’s Open Source, spread the word!&lt;/h4&gt;
+ 
+&lt;p&gt;In order to spread Tradui to other platforms and uses the code was &lt;a href="http://github.com/brendanlim/Tradui"&gt;open sourced on GitHub&lt;/a&gt;, allowing the community to fork the project and help with development. Many people have even ported the idea to other platforms.&lt;/p&gt;
+ 
+&lt;p&gt;To learn more head to &lt;a href="http://traduiapp.com/"&gt;traduiapp.com&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;h4&gt;CrisisCamp @ SXSW&lt;/h4&gt;
+ 
+&lt;p&gt;If you plan to be in Austin for SXSW and want to take part in some Civic hacking at &lt;a href="http://crisiscampsxsw.eventbrite.com/"&gt;CrisisCamp @ SXSW&lt;/a&gt;, you can join CrisisCamp and many others March 16-17 to “hack to help” in times of Crisis.&lt;/p&gt;
+ 
+&lt;p&gt;CrisisCamp is hoping to have LIVE streaming video from the event courtesy of &lt;a href="http://twitter.com/texascoworking"&gt;@texascoworking&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/brendanlim/Tradui"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://traduiapp.com/"&gt;Homepage&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=WAOrNAfxzyI:WJZleaX1qPk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=WAOrNAfxzyI:WJZleaX1qPk:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=WAOrNAfxzyI:WJZleaX1qPk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=WAOrNAfxzyI:WJZleaX1qPk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=WAOrNAfxzyI:WJZleaX1qPk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=WAOrNAfxzyI:WJZleaX1qPk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=WAOrNAfxzyI:WJZleaX1qPk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/390821026</link><guid>http://thechangelog.com/post/390821026</guid><pubDate>Mon, 15 Feb 2010 08:25:00 -0600</pubDate><category>android</category><category>civichacking</category><category>github</category><category>iphone</category><category>haiti</category></item><item><title>Fiber: A simple PHP interface to CouchDB</title><description>&lt;a href="http://github.com/lgomez/fiber"&gt;Fiber: A simple PHP interface to CouchDB&lt;/a&gt;: &lt;p&gt;Fiber from &lt;a href="http://twitter.com/luisgo"&gt;Luis Gomez&lt;/a&gt; is a simple way to add &lt;a href="http://couchdb.apache.org/"&gt;CouchDB&lt;/a&gt; storage to your PHP app.&lt;/p&gt;
+ 
+&lt;p&gt;Given a User class that extends a Fiber Document:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;$user = User::find('john');
+$user-&gt;email = "john@example.com";
+$user-&gt;city = "San Francisco";
+$user-&gt;save();
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;Fiber also includes some nifty chaining:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;$user-&gt;set( array( "email" =&gt; "peter@example.com", "city" =&gt; "Caracas" ) )-&gt;save();
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;Check out the &lt;a href="http://github.com/lgomez/fiber/blob/master/example/example.php"&gt;examples&lt;/a&gt; in the source.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/lgomez/fiber"&gt;Source on GitHub&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JC4CY9ldU_Q:SSOsn_SqXgM:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JC4CY9ldU_Q:SSOsn_SqXgM:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JC4CY9ldU_Q:SSOsn_SqXgM:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=JC4CY9ldU_Q:SSOsn_SqXgM:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JC4CY9ldU_Q:SSOsn_SqXgM:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JC4CY9ldU_Q:SSOsn_SqXgM:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=JC4CY9ldU_Q:SSOsn_SqXgM:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/388371939</link><guid>http://thechangelog.com/post/388371939</guid><pubDate>Sat, 13 Feb 2010 22:46:07 -0600</pubDate><category>github</category><category>php</category><category>couchdb</category><category>nosql</category></item><item><title>aruba - Cucumber steps for testing your command line apps</title><description>&lt;a href="http://github.com/aslakhellesoy/aruba"&gt;aruba - Cucumber steps for testing your command line apps&lt;/a&gt;: &lt;p&gt;Terminal junkies rejoice! Now you can use &lt;a href="http://cukes.info"&gt;Cucumber&lt;/a&gt; to test your command line interfaces just like you do for your web apps. &lt;a href="http://github.com/aslakhellesoy/aruba"&gt;Aruba&lt;/a&gt; from Cucumber creator &lt;a href="http://github.com/aslakhellesoy"&gt;Aslak Hellesøy&lt;/a&gt; provides familiar step definitions for testing output, exit statuses, and file system commands. Here’s an example feature file for testing exit statuses:&lt;/p&gt;
+ 
+&lt;script src="http://gist.github.com/303804.js?file=aruba_exit.feature"&gt;&lt;/script&gt;&lt;p&gt;Aruba provides the exit status step:&lt;/p&gt;
+ 
+&lt;script src="http://gist.github.com/303804.js?file=steps.rb"&gt;&lt;/script&gt;&lt;p&gt;To use Aruba just install the gem&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;sudo gem install aruba
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;and then require it in your &lt;code&gt;env.rb&lt;/code&gt; or any file under &lt;code&gt;features/support&lt;/code&gt;&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;require 'aruba'
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/aslakhellesoy/aruba"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://cukes.info"&gt;Cucumber homepage&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=PQTt2yjiXVE:PsAjq_SkNnw:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=PQTt2yjiXVE:PsAjq_SkNnw:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=PQTt2yjiXVE:PsAjq_SkNnw:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=PQTt2yjiXVE:PsAjq_SkNnw:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=PQTt2yjiXVE:PsAjq_SkNnw:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=PQTt2yjiXVE:PsAjq_SkNnw:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=PQTt2yjiXVE:PsAjq_SkNnw:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/388235527</link><guid>http://thechangelog.com/post/388235527</guid><pubDate>Sat, 13 Feb 2010 21:14:34 -0600</pubDate><category>github</category><category>testing</category><category>cucumber</category><category>ruby</category><category>gems</category><category>command-line</category><category>cli</category></item><item><title>WebFinger libraries emerge</title><description>&lt;a href="http://github.com/intridea/redfinger"&gt;WebFinger libraries emerge&lt;/a&gt;: &lt;p&gt;Less than 24 hours after &lt;a href="http://www.readwriteweb.com/archives/google_enables_webfinger_for_google_profiles_email_as_identity.php"&gt;Google broke the news&lt;/a&gt; of its take on &lt;a href="http://code.google.com/p/webfinger/"&gt;WebFinger&lt;/a&gt;, its 21st century take on the Unix &lt;a href="http://www.manpagez.com/man/1/finger/"&gt;&lt;code&gt;finger&lt;/code&gt;&lt;/a&gt; command, enterprising developers are releasing native libraries for the service.&lt;/p&gt;
+ 
+&lt;p&gt;In case you missed it, WebFinger is a way to get profile information for a user of a service based solely on their email address.&lt;/p&gt;
+ 
+&lt;h4&gt;Ruby wrapper&lt;/h4&gt;
+ 
+&lt;p&gt;&lt;a href="http://twitter.com/mbleigh"&gt;Michael Bleigh&lt;/a&gt; at Intridea released &lt;a href="http://github.com/intridea/redfinger"&gt;Redfinger&lt;/a&gt; as a Ruby gem:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;sudo gem install redfinger
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;You can then finger someone from the console:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;finger = Redfinger.finger('youraccount@gmail.com')
+finger.open_id.first.to_s # =&gt; "http://www.google.com/profiles/youraccount"
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;h4&gt;Python library&lt;/h4&gt;
+ 
+&lt;p&gt;&lt;a href="http://github.com/jcarbaugh"&gt;Jeremy Carbaugh&lt;/a&gt; from Sunlight Labs (you did listen to &lt;a href="http://thechangelog.com/post/382418778/episode-0-1-3-civic-hacking-with-luigi-montanez-and-jere"&gt;Episode 0.1.3&lt;/a&gt;, didn’t you?) released his own &lt;a href="http://github.com/jcarbaugh/python-webfinger"&gt;Python take&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;Spotted other WebFinger libraries in the wild? &lt;a href="http://twitter.com/changelogshow"&gt;Let us know!&lt;/a&gt; Bonus points for one named &lt;a href="http://www.imdb.com/title/tt0058150/"&gt;Goldfinger&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/intridea/redfinger"&gt;Redfinger on GitHub&lt;/a&gt;] [&lt;a href="http://github.com/jcarbaugh/python-webfinger"&gt;python-webfinger on GitHub&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=EOwVUugHMc8:yP0V8gM1bic:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=EOwVUugHMc8:yP0V8gM1bic:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=EOwVUugHMc8:yP0V8gM1bic:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=EOwVUugHMc8:yP0V8gM1bic:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=EOwVUugHMc8:yP0V8gM1bic:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=EOwVUugHMc8:yP0V8gM1bic:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=EOwVUugHMc8:yP0V8gM1bic:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/385799747</link><guid>http://thechangelog.com/post/385799747</guid><pubDate>Fri, 12 Feb 2010 12:18:00 -0600</pubDate><category>github</category><category>google</category><category>ruby</category><category>python</category><category>api</category><category>webfinger</category></item><item><title>Quicksand: Awesome jQuery plugin to filter/animate HTML lists</title><description>&lt;a href="http://github.com/razorjack/quicksand"&gt;Quicksand: Awesome jQuery plugin to filter/animate HTML lists&lt;/a&gt;: &lt;p&gt;Quicksand from &lt;a href="http://github.com/razorjack"&gt;Jacek Galanciak&lt;/a&gt; is a jQuery plugin to help you filter and animate items in an HTML list.&lt;/p&gt;
+ 
+&lt;p&gt;With code like this:&lt;/p&gt;
+ 
+&lt;pre&gt;&lt;code&gt;$("#content").quicksand($("#data &gt; li"), 
+  {
+    // all the parameters have sensible defaults
+    // and in most cases can be optional
+    duration: 1000,
+    easing: "easeInOutQuad",
+    attribute: "data-id",
+  }
+);
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;You can get the eye candy in this &lt;a href="http://screenr.com/S1x"&gt;video&lt;/a&gt;:&lt;/p&gt;
+ 
+&lt;p&gt;&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0" width="560" height="345"&gt;&lt;param name="movie" value="http://screenr.com/Content/assets/screenr_1116090935.swf"&gt;
+&lt;param name="flashvars" value="i=46757"&gt;
+&lt;param name="allowFullScreen" value="true"&gt;
+&lt;embed src="http://screenr.com/Content/assets/screenr_1116090935.swf" flashvars="i=46757" allowfullscreen="true" width="560" height="345" pluginspage="http://www.macromedia.com/go/getflashplayer"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+ 
+&lt;p&gt;Quicksand depends on &lt;a href="http://github.com/jquery/jquery"&gt;jQuery 1.4+&lt;/a&gt; and most any browser that isn’t abbreviated IE6.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/razorjack/quicksand"&gt;Source on Github&lt;/a&gt;] [&lt;a href="http://razorjack.net/quicksand/"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://razorjack.net/quicksand/demos/ajax.html"&gt;Demo&lt;/a&gt;] [&lt;a href="http://www.happywebbies.com/"&gt;Happy Webbies!&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=k-XuVUgDSVI:ZeHE6rqLVME:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=k-XuVUgDSVI:ZeHE6rqLVME:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=k-XuVUgDSVI:ZeHE6rqLVME:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=k-XuVUgDSVI:ZeHE6rqLVME:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=k-XuVUgDSVI:ZeHE6rqLVME:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=k-XuVUgDSVI:ZeHE6rqLVME:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=k-XuVUgDSVI:ZeHE6rqLVME:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/385538912</link><guid>http://thechangelog.com/post/385538912</guid><pubDate>Fri, 12 Feb 2010 08:38:00 -0600</pubDate><category>jquery,</category><category>animation</category><category>css3</category><category>design</category><category>github</category><category>javascript</category><category>plugins</category><category>video</category><enclosure url="http://screenr.com/Content/assets/screenr_1116090935.swf" length="53065" type="application/x-shockwave-flash" /><media:content url="http://screenr.com/Content/assets/screenr_1116090935.swf" fileSize="53065" type="application/x-shockwave-flash" /></item><item><title>storytlr - lifestreaming for geeks</title><description>&lt;a href="http://github.com/jmhobbs/storytlr"&gt;storytlr - lifestreaming for geeks&lt;/a&gt;: &lt;p&gt;Open Source has its own &lt;a href="http://en.wikipedia.org/wiki/Circle_of_Life"&gt;Circle of Life&lt;/a&gt;. As we discussed in &lt;a href="http://thechangelog.com/post/360070705/episode-0-1-1-john-nunemaker-from-mongomapper"&gt;Episode 0.1.1&lt;/a&gt;, Open Source creates opportunities for entrepreneurs. Sometimes &lt;a href="http://shopify.com"&gt;those businesses&lt;/a&gt; can spin off &lt;a href="http://liquidmarkup.org"&gt;their own projects&lt;/a&gt;, paving the way for the next round of startups.&lt;/p&gt;
+ 
+&lt;p&gt;Sometimes commercial apps just don’t survive, but let’s not confuse viable with valuable. Take the case of &lt;a href="http://storytlr.com/"&gt;Storytlr&lt;/a&gt;, a hosted lifestreaming service which sought to let you remix your social networking interactions into your own “stories.” When the hard decision was made to pull the plug on the service at the end of last year, the founders did what many apps have done and handed the source code over to the community.&lt;/p&gt;
+ 
+&lt;p&gt;The official Storytlr open source project is on &lt;a href="http://storytlr.googlecode.com/"&gt;Google Code&lt;/a&gt; but &lt;a href="http://github.com/jmhobbs"&gt;John Hobbs&lt;/a&gt; has a &lt;a href="http://github.com/jmhobbs/storytlr"&gt;fork on GitHub&lt;/a&gt; that adds:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;A tool to rename users (dangerous if not handled properly)&lt;/li&gt;
+&lt;li&gt;Plugins built in for…&lt;/li&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;goodreads&lt;/li&gt;
+&lt;li&gt;Foursquare&lt;/li&gt;
+&lt;li&gt;Stack Overflow&lt;/li&gt;
+&lt;li&gt;Twitter favorites&lt;/li&gt;
+&lt;li&gt;Google Buzz&lt;/li&gt;
+&lt;li&gt;Ability to delete items that are from other sources (not just ones from Storytlr itself)&lt;/li&gt;
+&lt;li&gt;tidy is replaced by htmLawed&lt;/li&gt;
+&lt;li&gt;Misc fixes for issues reported on the Google group&lt;/li&gt;
+&lt;li&gt;Misc fixes from other forks, esp. paths courtesy of Stuart Herbert&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For a &lt;a href="http://stream.abrah.am/"&gt;live demo&lt;/a&gt;, check out &lt;a href="http://twitter.com/abraham"&gt;@abraham&lt;/a&gt;’s Storytlr at &lt;a href="http://stream.abrah.am/"&gt;&lt;a href="http://stream.abrah.am/"&gt;http://stream.abrah.am/&lt;/a&gt;&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;Storytlr runs on PHP (which runs darn near everywhere) and &lt;a href="http://github.com/jmhobbs/storytlr#readme"&gt;installation instructions&lt;/a&gt; can be found in the &lt;a href="http://github.com/jmhobbs/storytlr#readme"&gt;README&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://storytlr.googlecode.com/"&gt;Official Google Code Project&lt;/a&gt;] [&lt;a href="http://github.com/jmhobbs/storytlr"&gt;Source on GitHub&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=dsGLj-x3Xzc:bI63lYTxImk:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=dsGLj-x3Xzc:bI63lYTxImk:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=dsGLj-x3Xzc:bI63lYTxImk:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=dsGLj-x3Xzc:bI63lYTxImk:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=dsGLj-x3Xzc:bI63lYTxImk:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=dsGLj-x3Xzc:bI63lYTxImk:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=dsGLj-x3Xzc:bI63lYTxImk:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/385487416</link><guid>http://thechangelog.com/post/385487416</guid><pubDate>Fri, 12 Feb 2010 07:47:00 -0600</pubDate><category>github</category><category>php</category><category>lifestreaming</category><category>social-media</category></item><item><title>firequery - jQuery love for Firebug</title><description>&lt;a href="http://github.com/darwin/firequery"&gt;firequery - jQuery love for Firebug&lt;/a&gt;: &lt;p&gt;&lt;a href="http://firequery.binaryage.com/"&gt;Firequery&lt;/a&gt; from &lt;a href="http://github.com/darwin"&gt;Antonin Hildebrand&lt;/a&gt; is a neat tool that adds jQuery features to Joe Hewitt’s &lt;a href="http://getfirebug.com"&gt;FireBug&lt;/a&gt; add-on for Firefox including:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;jQuery expressions are intelligently presented in Firebug Console and DOM inspector&lt;/li&gt;
+&lt;li&gt;attached jQuery datas are first class citizens&lt;/li&gt;
+&lt;li&gt;elements in jQuery collections are highlighted on hover&lt;/li&gt;
+&lt;li&gt;jQuerify: enables you to inject jQuery into any web page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0" width="560" height="345"&gt;&lt;param name="movie" value="http://screenr.com/Content/assets/screenr_1116090935.swf"&gt;
+&lt;param name="flashvars" value="i=46448"&gt;
+&lt;param name="allowFullScreen" value="true"&gt;
+&lt;embed src="http://screenr.com/Content/assets/screenr_1116090935.swf" flashvars="i=46448" allowfullscreen="true" width="560" height="345" pluginspage="http://www.macromedia.com/go/getflashplayer"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/darwin/firequery"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://firequery.binaryage.com/"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://screenr.com/1Nx"&gt;Quick screencast&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JAZ3LBuXmrs:ud-O_TFxip4:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JAZ3LBuXmrs:ud-O_TFxip4:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JAZ3LBuXmrs:ud-O_TFxip4:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=JAZ3LBuXmrs:ud-O_TFxip4:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JAZ3LBuXmrs:ud-O_TFxip4:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=JAZ3LBuXmrs:ud-O_TFxip4:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=JAZ3LBuXmrs:ud-O_TFxip4:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/383855879</link><guid>http://thechangelog.com/post/383855879</guid><pubDate>Thu, 11 Feb 2010 09:36:46 -0600</pubDate><category>github</category><category>jquery</category><category>firefox</category><category>add-ons</category><category>plugins</category><category>development</category><category>javascript</category><category>debugging</category><category>screencasts</category><enclosure url="http://screenr.com/Content/assets/screenr_1116090935.swf" length="53065" type="application/x-shockwave-flash" /><media:content url="http://screenr.com/Content/assets/screenr_1116090935.swf" fileSize="53065" type="application/x-shockwave-flash" /></item><item><title>ripple - Ruby client for Riak</title><description>&lt;a href="http://github.com/seancribbs/ripple"&gt;ripple - Ruby client for Riak&lt;/a&gt;: &lt;p&gt;Are you a Rubyist and want to play with &lt;a href="http://riak.basho.com"&gt;Riak&lt;/a&gt;, the sweet new NoSQL distributed database we &lt;a href="http://thechangelog.com/post/382278264/riak-high-performance-document-store-built-on-json-and-r"&gt;featured earlier&lt;/a&gt;? During our interview for upcoming Episode 0.1.4, &lt;a href="http://seancribbs.com"&gt;Sean Cribbs&lt;/a&gt; gave us a scoop. Introducing &lt;a href="http://github.com/seancribbs/ripple"&gt;Ripple&lt;/a&gt;, a hot new Ruby client for Riak.&lt;/p&gt;
+ 
+&lt;h4&gt;An example from the &lt;a href="http://github.com/seancribbs/ripple#readme"&gt;README&lt;/a&gt;
+&lt;/h4&gt;
+ 
+&lt;pre&gt;&lt;code&gt;require 'riak'
+ 
+# Create a client interface
+client = Riak::Client.new
+ 
+# Retrieve a bucket
+bucket = client.bucket("doc")  # a Riak::Bucket
+ 
+# Get an object from the bucket
+object = bucket.get("index.html")   # a Riak::RObject
+ 
+# Change the object's data and save
+object.data = "Hello, world!"
+object.store
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;p&gt;Still want more Riak? Stay tuned. Episode 0.1.4 will rock!&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/seancribbs/ripple"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://seancribbs.github.com/ripple/"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://seancribbs.com/tech/2010/02/10/introducing-ripple-0-5-you-got-your-riak-in-my-ruby/"&gt;Backstory&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=-muGj85y070:iotVv869L-0:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=-muGj85y070:iotVv869L-0:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=-muGj85y070:iotVv869L-0:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=-muGj85y070:iotVv869L-0:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=-muGj85y070:iotVv869L-0:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=-muGj85y070:iotVv869L-0:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=-muGj85y070:iotVv869L-0:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/383049531</link><guid>http://thechangelog.com/post/383049531</guid><pubDate>Wed, 10 Feb 2010 22:01:00 -0600</pubDate><category>github</category><category>ruby</category><category>gems</category><category>riak</category><category>basho</category><category>nosql</category><category>wrappers</category></item><item><title>Episode 0.1.3 - Civic hacking with Luigi Montanez and Jeremy Carbaugh from Sunlight Labs</title><description>&lt;script src="http://www.buzzsprout.com/105/2563-episode-0-1-3-civic-hacking-with-luigi-montanez-and-jeremy-carbaugh-from-sunlight-labs.js?player=small" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;Adam and Wynn caught up with &lt;a href="http://twitter.com/luigimontanez"&gt;Luigi Montanez&lt;/a&gt; and &lt;a href="http://twitter.com/jcarbaugh"&gt;Jeremy Carbaugh&lt;/a&gt; from &lt;a href="http://sunlightlabs.com"&gt;Sunlight Labs&lt;/a&gt; and discussed their &lt;a href="http://github.com/sunlightlabs"&gt;Python and Ruby projects&lt;/a&gt;, government transparency, and civic hacking - open source contributions as activism.&lt;/p&gt;
+ 
+&lt;p&gt;Items mentioned in the show:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="http://realtimecongress.org"&gt;Real Time Congress&lt;/a&gt; - iPhone app for keeping tabs on Congress, built with &lt;a href="http://thechangelog.com/post/334287138/episode-0-0-8-marshall-culpepper-from-appcelerator-titan"&gt;Appcelerator Titanium&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://github.com/sunlightlabs/anthill"&gt;Anthill&lt;/a&gt; - Django-powered community website project that runs &lt;a href="http://sunlightlabs.com"&gt;SunlightLabs.com&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://github.com/sunlightlabs/django-mediasync"&gt;MediaSync&lt;/a&gt; - Django Toolkit to simplify the static media development and deployment.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://services.sunlightlabs.com/api/"&gt;Sunlight Labs API&lt;/a&gt; - Congressional data served up for your next mashup.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://thechangelog.com/post/255049350/underscore-js-a-bowtie-for-jquerys-tux"&gt;Underscore.js&lt;/a&gt; - The tie for jQuery’s tux&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://www.whitehouse.gov/open"&gt;Open Government Initiative&lt;/a&gt; - Every .gov web site now has to outline their transparency efforts&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://sunlightlabs.com/contests/appsforamerica/"&gt;Apps for America&lt;/a&gt; - Build a mashup, win some $$$&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://sunlightlabs.com/hackathon09/"&gt;Great American Hackathon&lt;/a&gt; - Meetup and hack to improve your government&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://oreilly.com/catalog/9780596804367"&gt;Open Government book from OReilly&lt;/a&gt; - Collaboration, Transparency, and Participation in Practice&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://tweetcongress.org"&gt;Tweet Congress&lt;/a&gt; - SXSW Web Award-winning congressional Twitter directory built on Sunlight Labs API&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://capitolwords.org/"&gt;Capitol Words&lt;/a&gt; - Amazing site and &lt;a href="http://capitolwords.org/api/"&gt;API&lt;/a&gt; analysis of what’s said on the floor of Congress&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://opencongress.org"&gt;Open Congress&lt;/a&gt; - Browse, read, discuss, and vote on legislation before Congress.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://codeforamerica.org/"&gt;Code for America&lt;/a&gt; - Connecting city governments and Web 2.0 talent.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.apple.com/ipad/"&gt;Some new gadget from Apple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://www.chromium.org/chromium-os"&gt;Chromium OS&lt;/a&gt; - Google’s new OS discussed on &lt;a href="http://thechangelog.com/post/265143734/episode-0-0-4-chrome-os-thor-and-roar"&gt;Episode 0.0.4&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://bitbucket.org/sunlightlabs/saucebrush/"&gt;SauceBrush&lt;/a&gt; - an attempt to build a python ETL library that doesn’t suck&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://github.com/mxcl/homebrew"&gt;Homebrew&lt;/a&gt; - Package management for Mac as discussed on &lt;a href="http://thechangelog.com/post/369304801/episode-0-1-2-gordon-is-such-a-showoff"&gt;Episode 0.1.2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://transparencycamp.org/"&gt;Transparency Camp&lt;/a&gt; - THE unconference for government representatives, technologists, journalists, developers, NGOs, wonks and activists&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://www.larubyconf.com/"&gt;Los Angeles Ruby Conf&lt;/a&gt; - See Luigi and others speak Ruby in beautiful downtown Burbank&lt;/li&gt;
+&lt;/ul&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=6AhEG24BkJg:vfn75Qdh0WA:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=6AhEG24BkJg:vfn75Qdh0WA:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=6AhEG24BkJg:vfn75Qdh0WA:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=6AhEG24BkJg:vfn75Qdh0WA:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=6AhEG24BkJg:vfn75Qdh0WA:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=6AhEG24BkJg:vfn75Qdh0WA:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=6AhEG24BkJg:vfn75Qdh0WA:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/382418778</link><guid>http://thechangelog.com/post/382418778</guid><pubDate>Wed, 10 Feb 2010 15:26:00 -0600</pubDate><category>api</category><category>gov20</category><category>government</category><category>hacking</category><category>meetups</category><category>python</category><category>ruby</category><category>audio</category></item><item><title>riak - high performance document store built on JSON and REST</title><description>&lt;a href="http://github.com/zeitgeist/riak"&gt;riak - high performance document store built on JSON and REST&lt;/a&gt;: &lt;p&gt;&lt;a style="float:right;margin: 0 0 10px 10px" href="http://riak.basho.com"&gt;&lt;img src="http://riak.basho.com/images/riaklogo_clear.png" alt="riak"/&gt;&lt;/a&gt;
+&lt;a href="http://riak.basho.com"&gt;Riak&lt;/a&gt;, &lt;em&gt;REE-ahk&lt;/em&gt;, combines the power of &lt;a href="http://erlang.org/"&gt;Erlang&lt;/a&gt; with the ubiquity of JSON to deliver a highly scalable document store over REST. Hold on &lt;a href="http://couchdb.apache.org/"&gt;CouchDB&lt;/a&gt; fans, before you pounce, you haven’t heard this one before.&lt;/p&gt;
+ 
+&lt;h4&gt;Master-less replication&lt;/h4&gt;
+ 
+&lt;p&gt;Riak is architected for master-less replication from the GET-go. All nodes participate equally in the replication so scaling horizontally means just adding new servers to join the party.&lt;/p&gt;
+ 
+&lt;h4&gt;Links for powerful object graphs&lt;/h4&gt;
+ 
+&lt;p&gt;Riak supports &lt;em&gt;link-walking&lt;/em&gt; which is far more powerful than traditional relational DB joins. As &lt;a href="http://seancribbs.com/tech/2010/02/06/why-riak-should-power-your-next-rails-app/"&gt;Sean Cribbs&lt;/a&gt; explains:&lt;/p&gt;
+ 
+&lt;blockquote&gt;
+  &lt;p&gt;Every datum stored in Riak can have one-way relationships to other data via the Link HTTP header. In the canonical example, you know the key of a band that you have stored in the “artists” bucket (Riak buckets are like database tables or S3 buckets). If that artist is linked to its albums, which are in turn linked to the tracks on the albums, you can find all of the tracks produced in a single request. As I’ll describe in the next section, this is much less painful than a JOIN in SQL because each item is operated on independently, rather than a table at a time. Here’s what that query would look like:&lt;/p&gt;
+&lt;/blockquote&gt;
+ 
+&lt;pre&gt;&lt;code&gt;GET /raw/artists/TheBeatles/albums,_,_/tracks,_,1
+&lt;/code&gt;&lt;/pre&gt;
+ 
+&lt;h4&gt;More powerful Map/Reduce&lt;/h4&gt;
+ 
+&lt;p&gt;Map/Reduce works a bit differently in Riak. Riak’s Map function expects a list of keys on which it should run. You can of course pass every key in your bucket, but doing Map in this way allows Map to be run on the node where the data is actually stored.&lt;/p&gt;
+ 
+&lt;p&gt;Riak ships with &lt;a href="http://riak.basho.com/programming.html"&gt;libraries for Python, Ruby, Java, Erlang, and even JavaScript&lt;/a&gt;. Want to know more? Stay tuned. Riak will be the focus of an upcoming episode of The Changelog.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://hg.basho.com/riak/wiki/Home"&gt;Source on BitBucket&lt;/a&gt;] [&lt;a href="http://riak.basho.com"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://riak.basho.com/nyc-nosql/"&gt;Brian Fink’s NYC-NoSQL talk&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=SaR_5u0k8G8:t3KH4jaaKmw:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=SaR_5u0k8G8:t3KH4jaaKmw:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=SaR_5u0k8G8:t3KH4jaaKmw:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=SaR_5u0k8G8:t3KH4jaaKmw:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=SaR_5u0k8G8:t3KH4jaaKmw:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=SaR_5u0k8G8:t3KH4jaaKmw:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=SaR_5u0k8G8:t3KH4jaaKmw:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/382278264</link><guid>http://thechangelog.com/post/382278264</guid><pubDate>Wed, 10 Feb 2010 13:49:00 -0600</pubDate><category>github</category><category>riak</category><category>nosql</category><category>json</category><category>rest</category><category>erlang</category><category>php</category><category>ruby</category><category>python</category><category>java</category></item><item><title>toto - Close-to-the-metal blogging on top of Rack</title><description>&lt;a href="http://github.com/cloudhead/toto"&gt;toto - Close-to-the-metal blogging on top of Rack&lt;/a&gt;: &lt;p&gt;Take a look around the small site web landscape and it’s clear we’re not in Kansas anymore. It’s no longer a foregone conclusion that a new blog or brochure site should be built on a CMS or even web framework. &lt;a href="http://github.com/cloudhead/toto"&gt;Toto&lt;/a&gt; is the latest in a rising breed of static page generators.&lt;/p&gt;
+ 
+&lt;p&gt;Toto dumps the database and stores its content in plain text files. Its built on top of Rack and is &lt;a href="http://heroku.com"&gt;Heroku&lt;/a&gt; &amp; &lt;a href="http://varnish-cache.org/"&gt;Varnish&lt;/a&gt; friendly so that your site will scream on even a free single dyno.&lt;/p&gt;
+ 
+&lt;p&gt;From the &lt;a href="http://github.com/cloudhead/toto#readme"&gt;README&lt;/a&gt;, here’s how Toto works:&lt;/p&gt;
+ 
+&lt;ul&gt;
+&lt;li&gt;content is entirely managed through git; you get full fledged version control for free.&lt;/li&gt;
+&lt;li&gt;articles are stored as .txt files, with embeded metadata (in yaml format).&lt;/li&gt;
+&lt;li&gt;articles are processed through a markdown converter (rdiscount) by default.&lt;/li&gt;
+&lt;li&gt;templating is done through ERB.&lt;/li&gt;
+&lt;li&gt;toto is built right on top of Rack.&lt;/li&gt;
+&lt;li&gt;toto was built to take advantage of HTTP caching.&lt;/li&gt;
+&lt;li&gt;toto was built with heroku in mind.&lt;/li&gt;
+&lt;li&gt;comments are handled by disqus&lt;/li&gt;
+&lt;li&gt;individual articles can be accessed through urls such as /2009/11/21/blogging-with-toto&lt;/li&gt;
+&lt;li&gt;the archives can be accessed by year, month or day, wih the same format as above.&lt;/li&gt;
+&lt;li&gt;arbitrary metadata can be included in articles files, and accessed from the templates.&lt;/li&gt;
+&lt;li&gt;summaries are generated intelligently by toto, following the :max setting you give it.&lt;/li&gt;
+&lt;li&gt;you can also define how long your summary is, by adding ~ at the end of it (:delim).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get started quickly, clone the default template &lt;a href="http://github.com/cloudhead/dorothy"&gt;Dorothy&lt;/a&gt; and deploy to Heroku in a snap.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/cloudhead/toto"&gt;Source on GitHub&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=UGMgMknKwe8:q4iX_kga2yg:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=UGMgMknKwe8:q4iX_kga2yg:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=UGMgMknKwe8:q4iX_kga2yg:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=UGMgMknKwe8:q4iX_kga2yg:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=UGMgMknKwe8:q4iX_kga2yg:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=UGMgMknKwe8:q4iX_kga2yg:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=UGMgMknKwe8:q4iX_kga2yg:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/379194665</link><guid>http://thechangelog.com/post/379194665</guid><pubDate>Mon, 08 Feb 2010 21:00:25 -0600</pubDate><category>github</category><category>rack</category><category>blogging</category><category>toto</category><category>heroku</category><category>varnish</category><category>static</category></item><item><title>Kohana - The Swift PHP Framework</title><description>&lt;a href="http://github.com/kohana/kohana"&gt;Kohana - The Swift PHP Framework&lt;/a&gt;: &lt;p&gt;&lt;a href="http://github.com/kohana/kohana"&gt;Kohana&lt;/a&gt; is a PHP MVC web framework that aims to be easy, lightweight, and secure. It has no dependencies on PECL or PEAR extensions and uses strict PHP 5 OOP. It uses what it calls “cascading resources” to allow developers to extend the framework without editing the core system.&lt;/p&gt;
+ 
+&lt;p&gt;&lt;img src="http://upload.wikimedia.org/wikipedia/en/1/1c/Kohana-modules.png" height="340" width="400" alt="cascading resources"/&gt;&lt;/p&gt;
+ 
+&lt;p&gt;There is an extensive list of [&lt;a href="http://dev.kohanaphp.com/projects/"&gt;modules&lt;/a&gt;], even a MongoDB ORM, &lt;a href="http://github.com/Wouterrr/MangoDB"&gt;MangoDB&lt;/a&gt;.&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/kohana/kohana"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://kohanaphp.com/"&gt;Homepage&lt;/a&gt;] [&lt;a href="http://docs.kohanaphp.com/"&gt;Docs&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=S1LglQFRbBc:uh3oaLwcDMY:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=S1LglQFRbBc:uh3oaLwcDMY:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=S1LglQFRbBc:uh3oaLwcDMY:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=S1LglQFRbBc:uh3oaLwcDMY:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=S1LglQFRbBc:uh3oaLwcDMY:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=S1LglQFRbBc:uh3oaLwcDMY:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=S1LglQFRbBc:uh3oaLwcDMY:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/372349621</link><guid>http://thechangelog.com/post/372349621</guid><pubDate>Fri, 05 Feb 2010 08:03:31 -0600</pubDate><category>github</category><category>php</category><category>mongodb</category><category>frameworks</category><category>mvc</category></item><item><title>TapkuLibrary - Beautiful iPhone UI class library </title><description>&lt;a href="http://github.com/devinross/tapkulibrary"&gt;TapkuLibrary - Beautiful iPhone UI class library &lt;/a&gt;: &lt;p&gt;TapkuLibrary from &lt;a href="http://devinsheaven.com"&gt;Devin Ross&lt;/a&gt; is a collection of UI classes for iPhone development. The &lt;a href="http://github.com/devinross/tapkulibrary#readme"&gt;README&lt;/a&gt; includes detailed installation instructions and is full of gorgeous screenshots:&lt;/p&gt;
+ 
+&lt;p&gt;&lt;a href="http://github.com/devinross/tapkulibrary"&gt;&lt;img src="http://farm5.static.flickr.com/4072/4247861508_046420c6fb_o.jpg" alt="screen shot" height="150" width='470"'/&gt;&lt;/a&gt;&lt;/p&gt;
+ 
+&lt;p&gt;[&lt;a href="http://github.com/devinross/tapkulibrary"&gt;Source on GitHub&lt;/a&gt;] [&lt;a href="http://tapku.com/"&gt;Tapku&lt;/a&gt;]&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=9mECRRNJjB8:SRPDjZDXFzM:yIl2AUoC8zA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=yIl2AUoC8zA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=9mECRRNJjB8:SRPDjZDXFzM:7Q72WNTAKBA"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=7Q72WNTAKBA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=9mECRRNJjB8:SRPDjZDXFzM:V_sGLiPBpWU"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=9mECRRNJjB8:SRPDjZDXFzM:V_sGLiPBpWU" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=9mECRRNJjB8:SRPDjZDXFzM:qj6IDK7rITs"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?d=qj6IDK7rITs" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~ff/thechangelog?a=9mECRRNJjB8:SRPDjZDXFzM:gIN9vFwOqvQ"&gt;&lt;img src="http://feeds.feedburner.com/~ff/thechangelog?i=9mECRRNJjB8:SRPDjZDXFzM:gIN9vFwOqvQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</description><link>http://thechangelog.com/post/371658110</link><guid>http://thechangelog.com/post/371658110</guid><pubDate>Thu, 04 Feb 2010 21:35:00 -0600</pubDate><category>UI</category><category>iphone</category><category>libraries</category><category>obj-c</category><category>github</category></item><language>en-us</language><media:rating>nonadult</media:rating></channel></rss>

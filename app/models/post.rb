@@ -3,4 +3,20 @@ class Post < ActiveRecord::Base
   validates_uniqueness_of :url, :scope => :feed_id
   validates_presence_of :url, :content, :title, :post_dt #is it possible that a valid fed item might not have these elements?
   named_scope :unread, :conditions => {:read => false}
+  def load_from_feed_item(item)
+    update_attributes(attr_hash(item))
+  end
+  def attr_hash(item)
+    content = item.content || item.description
+    dt = item.dc_date || item.published || item.pubDate
+    raise [content.class,dt.class,url,item.keys].inspect + item.inspect if content.blank? or dt.blank?
+    {:url => item.link, :title => item.title, :content => content, :post_dt => dt}
+  end
+  def load_feed!
+    raise rss.inspect unless rss.title.present?
+    update_attributes(:title => rss.title)
+    rss.items.each do |item|
+      posts.find_or_create_by_url(attr_hash(item)).update_attributes(attr_hash(item))
+    end
+  end
 end

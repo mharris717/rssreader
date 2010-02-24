@@ -7,7 +7,7 @@ RAILS_GEM_VERSION = '2.3.4' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 require 'open-uri'
-
+  
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
@@ -40,6 +40,7 @@ Rails::Initializer.run do |config|
   config.gem 'inherited_resources'
   config.gem 'haml'
   config.gem 'simple-rss'
+  config.gem 'fattr'
   
   if RAILS_ENV == 'test'
     config.gem "rspec", :lib => 'spec'
@@ -47,7 +48,7 @@ Rails::Initializer.run do |config|
     config.gem 'notahat-machinist', :lib => 'machinist', :source => 'http://gems.github.com'
     config.gem 'andand'
     # config.gem 'faker'
-    config.gem 'fattr'
+    
   end
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.

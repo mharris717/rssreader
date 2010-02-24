@@ -23,7 +23,11 @@ describe Feed do
     lambda { @other_user.feeds.make(:url => @user.feeds.first.url) }.should_not raise_error
   end
   context 'feed parsing' do
-    fattr(:num_items) { File.open(@file) { |f| f.read.scan(/(<rdf:li|<entry)/).size } }
+    fattr(:num_items) do
+      regex_hash = {'rdf' => /<rdf:li/, 'atom' => /<entry/, 'rss' => /<item/}
+      regex = regex_hash[@file.split("/").last.split(".").last]
+      File.open(@file) { |f| f.read.scan(regex).size } 
+    end
     fattr(:feed) { @user.feeds.make(:url => @file) }
     it 'can parse rdf' do
       @file = File.expand_path(File.join(RAILS_ROOT,'spec','fixtures',"sample.rdf"))
@@ -31,6 +35,10 @@ describe Feed do
     end
     it 'can parse atom' do
       @file = File.expand_path(File.join(RAILS_ROOT,'spec','fixtures',"sample.atom"))
+      lambda { feed.load_feed! }.should change(feed.posts,:count).by(num_items)
+    end
+    it 'can parse rss' do
+      @file = File.expand_path(File.join(RAILS_ROOT,'spec','fixtures',"sample.rss"))
       lambda { feed.load_feed! }.should change(feed.posts,:count).by(num_items)
     end
     it "verify that post data elements are populated correctly"

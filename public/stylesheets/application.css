@@ -7,3 +7,21 @@
 #left .read {
     display: none;
 }
+
+#left {
+    width: 450px;
+}
+
+.feed-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.post-feed-title {
+    display: none;
+    font-weight: bold;
+}
+
+.post {
+    padding-bottom: 5px;
+}

@@ -1,9 +1,7 @@
 %html
   %head
-    = javascript_include_tag 'jquery-1.4.2','application'
+    = javascript_include_tag 'jquery-1.4.2','jquery.quicksand','application'
     = stylesheet_link_tag 'application'
   %body
-    #header
-      = link_to 'Add Feed', new_feed_path, :id => 'add-feed'
-      = link_to 'My Feeds', posts_path
+    = render :partial => 'layouts/header'
     = yield

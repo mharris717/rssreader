@@ -10,4 +10,8 @@ class FeedsController < InheritedResources::Base
   def create
     create! { root_url }
   end
+  def refresh
+    current_user.load_all_feeds!
+    redirect_to root_url
+  end
 end

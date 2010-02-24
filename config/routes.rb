@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.devise_for :users
-  map.resources :feeds
+  map.resources :feeds, :collection => {:refresh => :post}
   map.resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
 
