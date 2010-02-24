@@ -1,0 +1,5 @@
+devise
+warden
+inherited_resources
+haml
+simple-rss
