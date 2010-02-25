@@ -1,6 +1,6 @@
 class Feed < ActiveRecord::Base
   belongs_to :user
-  has_many :posts
+  has_many :posts, :order => 'post_dt desc'
   validates_presence_of :url, :user_id
   validates_uniqueness_of :url, :scope => :user_id
 

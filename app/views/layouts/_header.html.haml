@@ -1,5 +1,8 @@
 #header
-  = link_to 'Add Feed', new_feed_path, :id => 'add-feed'
-  = link_to 'My Feeds', posts_path
-  = link_to 'Reload Feeds', {:controller => :feeds, :action => :refresh}, :method => :post
-  = link_to 'Sort','#',:class => 'sort'
+  = link_to 'Home', posts_path
+  |
+  = link_to 'Refresh', {:controller => :feeds, :action => :refresh}, :method => :post
+  |
+  = link_to 'Manage Feeds', new_feed_path, :id => 'add-feed'
+  |
+  = render :partial => 'posts/options'

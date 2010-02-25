@@ -1,6 +1,14 @@
 %h2 Add Feed
 
 - form_for @feed do |f|
+  = f.error_messages
   = f.label :url
   = f.text_field :url
+  = f.submit
+  
+%h2 Remove Feed
+
+- form_for @feed, :url => {:controller => :feeds, :action => :destroy}, :html => {:method => :delete} do |f|
+  = f.error_messages
+  = f.select :id, current_user.feeds.map { |x| [x.title,x.id] }
   = f.submit

@@ -41,6 +41,7 @@ Rails::Initializer.run do |config|
   config.gem 'haml'
   config.gem 'simple-rss'
   config.gem 'fattr'
+  config.gem 'andand'
   
   if RAILS_ENV == 'test'
     config.gem "rspec", :lib => 'spec'

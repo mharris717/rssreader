@@ -1,7 +1,7 @@
 #right {
     position: absolute;
     left: 300px;
-    top: 0px;
+    top: 40px;
 }
 
 #left .read {
@@ -9,7 +9,7 @@
 }
 
 #left {
-    width: 450px;
+    width: 290px;
 }
 
 .feed-title {
@@ -18,7 +18,7 @@
 }
 
 .post-feed-title {
-    display: none;
+    display: nonde;
     font-weight: bold;
 }
 

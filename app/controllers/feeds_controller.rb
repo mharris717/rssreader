@@ -1,3 +1,4 @@
+require 'andand'
 class FeedsController < InheritedResources::Base
   before_filter :authenticate_user!
   respond_to :js, :only => :new
@@ -5,13 +6,17 @@ class FeedsController < InheritedResources::Base
     current_user
   end
   def destroy
+    params[:id] = params[:feed].andand[:id] if params[:id].blank? || params[:id] == 'destroy'
     destroy! { root_url }
   end
   def create
-    create! { root_url }
+    create! do
+      @feed.load_feed!
+      root_url
+    end
   end
   def refresh
     current_user.load_all_feeds!
-    redirect_to root_url
+    redirect_to :controller => 'posts', :action => 'index'
   end
 end
