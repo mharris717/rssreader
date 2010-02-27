@@ -6,7 +6,17 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
 
-u = User.find_or_create_by_email(:email => 'mike@strikeinteractive.com', :password => 'password', :password_confirmation => 'password')
+u = User.find_or_create_by_email(:email => 'mharris717@gmail.com', :password => 'password', :password_confirmation => 'password')
 u.save!
 u.feeds.create!(:url => 'http://feeds.feedburner.com/AlineaAtHome')
-u.feeds.create!(:url => 'http://baseballcrank.com/index.rdf')
+u.feeds.create!(:url => 'http://daringfireball.net/index.xml')
+u.feeds.create!(:url => 'http://feeds.feedburner.com/RyansScraps')
+u.feeds.create!(:url => 'http://thechangelog.com/rss')
+
+u = User.find_or_create_by_email(:email => 'stevie@animoto.com', :password => 'password', :password_confirmation => 'password')
+u.save!
+u.feeds.create!(:url => 'http://daringfireball.net/index.xml')
+u.feeds.create!(:url => 'http://feeds.feedburner.com/RyansScraps')
+u.feeds.create!(:url => 'http://thechangelog.com/rss')
+
+Feed.all.each { |x| x.load_feed! }
