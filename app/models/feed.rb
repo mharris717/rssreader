@@ -4,7 +4,7 @@ class Feed < ActiveRecord::Base
   validates_presence_of :url, :user_id
   validates_uniqueness_of :url, :scope => :user_id
 
-  fattr(:rss) { SimpleRSS.parse open(url) }
+  fattr(:rss) { SimpleRSS.parse open( (url||'').strip ) }
   def load_feed!
     raise rss.inspect unless rss.title.present?
     update_attributes(:title => rss.title)
