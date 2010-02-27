@@ -1,8 +1,10 @@
 #header
   = link_to 'Home', posts_path
-  |
-  = link_to 'Refresh', {:controller => :feeds, :action => :refresh}, :method => :post
-  |
-  = link_to 'Manage Feeds', new_feed_path, :id => 'add-feed'
-  |
-  = render :partial => 'posts/options'
+  - if current_user
+    |
+    = link_to 'Refresh', {:controller => :feeds, :action => :refresh}, :method => :post
+    |
+    = link_to 'Manage Feeds', new_feed_path, :id => 'add-feed'
+    |
+    = link_to 'Logout', "/users/sign_out"
+    = render :partial => 'posts/options'
