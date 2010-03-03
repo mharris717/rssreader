@@ -4,7 +4,6 @@
 * If multiple users have the same feed, they don't share anything in the database, and the feed is retrieved N times.   
 * Test coverage should be much better.
 * Posts could disappear from left column when read with ajax.
-* Pagination
 
 = Plugins / Gems / Etc
 
@@ -98,7 +97,7 @@ I originally was displaying the posts grouped by feed, with a heading for each f
 *Sorting and Filtering*
 
 I could have done sorting and filtering in one of two ways:
-* Client Side - faster, less strain on server.  Requires post DOM elements to have data required for sorting in attributes.  Possible duplication of logic.  This is what I did
+* Client Side - faster, less strain on server.  Requires post DOM elements to have data required for sorting in attributes.  Possible duplication of logic.  Can be very slow if there are a lot of posts.  This is what I did
 * Server Side - server sends html to client.  Slower, more strain on server.  Server and client have to coordinate on how to request posts sorted and filtered in different ways.  Could potentially get new posts to client without an explicit refresh.  All display logic would be in one place.
 
 There is also a hybrid way, where the server sends JSON instead of html, which is then parsed and rendered on the client.  
@@ -106,6 +105,8 @@ There is also a hybrid way, where the server sends JSON instead of html, which i
 I wasn't 100% happy with my solution.  On balance, I think the pros outweigh the cons, but it's not a slam dunk.  When I decided to stop showing headings for each feed, the client-side way got a lot easier.  
 
 When sorting by date, I might be sorting by the string representation of the date, instead of the date itself.  This should be fixed.  
+
+If I wanted to add feed pagination, that would probably be a good reason to switch to server-side.  
 
 *Other*
 
