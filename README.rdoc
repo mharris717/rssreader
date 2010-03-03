@@ -7,11 +7,11 @@
 
 = Plugins / Gems / Etc
 
-### Devise ###
+=== Devise
 
 Authentication Framework.  I've used Authlogic in the past, figured I'd give Devise a try.  It's tough to imagine an app doing any kind of standard authentication where it wouldn't make sense to use one of the frameworks.
 
-### Inherited Resources ###
+=== Inherited Resources
 
 Gives you most of the standard rest functionality for free.  I consider any boilerplate to be a code smell, even when it's only a couple lines.  Sometimes the couple lines of boilerplate are better than the increased complexity of removing that boilerplate, but that decision should be made on a case by case basis.
 
@@ -19,32 +19,32 @@ Two of the great things about Rails are
 * A massive decrease in boilerplate code.  In many scenarios, Rails can cut down boilerplate from (making up numbers) 30 lines to 5 lines.  That's great, but all other things equal, 0 is still less than 5.
 * The ability to specify functionality declaratively.  The classic example of this is associations (has_many :posts, before_filter :authenticate_user, etc).  I am a huge fan of declarative programming.  Inherited Resources lets you say things like "respond_to :js, :only => :new".  Clear and concise.
 
-### Haml ###
+=== Haml
 
 I love Haml.  To be, it's the Ruby of templating languages, in that it manages to be both concise and expressive at the same time.
 
-### Simple RSS ###
+=== Simple RSS
 
 In retrospect, I'm not sure it was the right choice for a feed parser.  It appears that when parsing different feed formats, information like title and date end up in different fields (corresponding to their different names in each format).  I would expect my parsing library to handle the different formats and yield uniform objects, so I can be ignorant of the feed format.  I think I just picked a library that wasn't intended to do that.
 
-### Fattr ###
+=== Fattr
 
 Simple gem that lets you create lazily initialized methods.  It's analogous to the standard idiom (def foo; @foo ||= 42; end), but has a couple advantages
 * More concise
 * Also creates the setter
 * It's not awkward to have multi-line initialization code
 
-### Andand ###
+=== Andand
 
 Simple gem that makes it easier to deal with potentially null objects
 
-### RSpec ###
+=== RSpec
 
 I have a preference for RSpec over Test::Unit.  I find the syntax to be worlds more pleasant than standard Test::Unit.  This preference started several years ago, and I probably need to reevaluate.  There are a ton of libraries that serve to take the best parts of RSpec and layer them on top of Test::Unit.
 
 I really only have test coverage of the feed parsing.  If I were continuing to build this app out, the first thing to do would me to have proper test coverage.
 
-### jQuery ###
+=== jQuery
 
 I use jQuery on any project I'm doing that uses Javascript, which is of course basically every webapp.  I love jQuery.
 
@@ -55,7 +55,7 @@ I tend not to use the built-in Rails javascript helper methods and functionality
 
 I'm definitely open to the idea that I'm doing things in a more complex way in some cases.  I should probably check out the current state of the js helper methods with an open mind and determine whether I want to start using them again.
 
-### Quicksand ###
+=== Quicksand
 
 jQuery plugin that gives you "pretty sorting" of DOM elements.  You supply it with the DOM element containing your list and the new list of items, and it displays a pretty animation of the sorting/adding/removing.  I'd seen this recently, and thought I would try it out on this app.
 
@@ -63,16 +63,16 @@ jQuery plugin that gives you "pretty sorting" of DOM elements.  You supply it wi
 
 I tried to walk the line between YAGNI and a "well-architected" system.  Those two aren't mutually exclusive by any means, but I think you understand what I am trying to say.  I am obviously trying to demonstrate my ability, but I also want to keep the design in line with the scope of this app.
 
-### When/how to refresh the feeds ###
+=== When/how to refresh the feeds
 
 I chose to load posts from a feed when the feed is added by the user, and to load posts from all feeds when the refresh link is clicked.
 I'm using the URL of a post as the "key."  If the feed contains a post with the same URL as one already in the database, it is considered to already exist.  I am also updating all posts in the database with the latest data from the feed.  I did this mostly to make it easier during development, but it will also process updates to existing posts, which might be a nice feature.
 
-### Processing the feeds ###
+=== Processing the feeds
 
 I put the processing logic on the Feed and Post models, instead of in a separate class.  Feed gets the feed from the URL, updates its own data, parses it into posts using SimpleRSS, finds or creates the corresponding post for the url, then passes the RSS item to the Post model to process.  The Post model converts the various post formats into a hash of attributes, and updates itself.  As the logic got more complicated, it would make sense to move it into its own class.
 
-### Storing Feeds and Posts ###
+=== Storing Feeds and Posts
 
 There were two options here (I chose the first option):
 * If 5 users add the same feed, that feed and all its posts will exist 5 times in the database.  Updating one of those 5 instances of the feed has no effect on the others.  The classes are Feed, Post and User
@@ -82,7 +82,7 @@ There is also a hybrid way, which would reduce the number of feed queries.  In t
 
 I thought about setting up a cron or DelayedJob that would update the feeds in the background, but I figured that was overkill.
 
-### What goes on each controller ###
+=== What goes on each controller
 
 I wasn't sure whether I wanted to put the action to retrieve posts on PostsController or FeedsController.  Since I'm retrieving posts, it makes sense for it to go on PostsController, but originally I was displaying the posts grouped by Feed, so maybe it belongs on FeedsController.  PostsController makes more sense, but it wasn't clear-cut.
 
@@ -90,11 +90,11 @@ The refresh action probably makes more sense on FeedsController, but it could re
 
 The rest are pretty straightforward.
 
-### How to display the posts ###
+=== How to display the posts
 
 I originally was displaying the posts grouped by feed, with a heading for each field.  Eventually I scraped that, mostly because it was making it much more difficult to sort the posts with javascript.  If that was the desired way to display the posts, I would revisit this.
 
-### Sorting and Filtering ###
+=== Sorting and Filtering
 
 I could have done sorting and filtering in one of two ways:
 * Client Side - faster, less strain on server.  Requires post DOM elements to have data required for sorting in attributes.  Possible duplication of logic.  Can be very slow if there are a lot of posts.  This is what I did
@@ -108,7 +108,7 @@ When sorting by date, I might be sorting by the string representation of the dat
 
 If I wanted to add feed pagination, that would probably be a good reason to switch to server-side.
 
-### Other ###
+=== Other
 
 Posts are automatically tagged as read when they are opened.  This occurs in PostsController#show.  I did it this way for expediency, since the show action is only used in one place.  This request is a GET, which violates REST and isn't ideal.  As the app grew, you would almost certainly want to have the tagging as read be done explicitly, either with a parameter to the show action, in the update action, or a separate dedicated action.
 
