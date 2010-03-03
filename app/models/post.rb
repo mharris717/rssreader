@@ -12,11 +12,4 @@ class Post < ActiveRecord::Base
     raise [content.class,dt.class,url,item.keys].inspect + item.inspect if content.blank? or dt.blank?
     {:url => item.link, :title => item.title, :content => content, :post_dt => dt}
   end
-  def load_feed!
-    raise rss.inspect unless rss.title.present?
-    update_attributes(:title => rss.title)
-    rss.items.each do |item|
-      posts.find_or_create_by_url(attr_hash(item)).update_attributes(attr_hash(item))
-    end
-  end
 end
