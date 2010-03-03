@@ -1,4 +1,4 @@
-h2. Some things I'm not in love with.
+= Some things I'm not in love with.
 
 * Somewhat awkward mix of ajax and non-ajax elements.
 * If multiple users have the same feed, they don't share anything in the database, and the feed is retrieved N times.   
@@ -6,12 +6,14 @@ h2. Some things I'm not in love with.
 * Posts could disappear from left column when read with ajax.
 * Pagination
 
-h2. Plugins / Gems / Etc
+= Plugins / Gems / Etc
 
 *Devise*
+
 Authentication Framework.  I've used Authlogic in the past, figured I'd give Devise a try.  It's tough to imagine an app doing any kind of standard authentication where it wouldn't make sense to use one of the frameworks.  
 
 *Inherited Resources*
+
 Gives you most of the standard rest functionality for free.  I consider any boilerplate to be a code smell, even when it's only a couple lines.  Sometimes the couple lines of boilerplate are better than the increased complexity of removing that boilerplate, but that decision should be made on a case by case basis.  
 
 Two of the great things about Rails are 
@@ -19,24 +21,30 @@ Two of the great things about Rails are
 * The ability to specify functionality declaratively.  The classic example of this is associations (has_many :posts, before_filter :authenticate_user, etc).  I am a huge fan of declarative programming.  Inherited Resources lets you say things like "respond_to :js, :only => :new".  Clear and concise.
 
 *Haml*
+
 I love Haml.  To be, it's the Ruby of templating languages, in that it manages to be both concise and expressive at the same time.  
 
 *Simple RSS*
+
 In retrospect, I'm not sure it was the right choice for a feed parser.  It appears that when parsing different feed formats, information like title and date end up in different fields (corresponding to their different names in each format).  I would expect my parsing library to handle the different formats and yield uniform objects, so I can be ignorant of the feed format.  I think I just picked a library that wasn't intended to do that.  
 
 *Fattr*
+
 Simple gem that lets you create lazily initialized methods.  It's analogous to the standard idiom (def foo; @foo ||= 42; end), but has a couple advantages
 * More concise
 * Also creates the setter
 * It's not awkward to have multi-line initialization code 
 
 *Andand*
+
 Simple gem that makes it easier to deal with potentially null objects
 
 *RSpec*
+
 I have a preference for RSpec over Test::Unit.  I find the syntax to be worlds more pleasent than standard Test::Unit.  This preference started several years ago, and I probably need to reevaluate.  There are a ton of libraries that serve to take the best parts of RSpec and layer them on top of Test::Unit.
 
 *jQuery*
+
 I use jQuery on any project I'm doing that uses Javascript, which is of course basically every webapp.  I love jQuery.  
 
 I tend not to use the built-in Rails javascript helper methods and functionality.  I do this for several reasons.
@@ -47,7 +55,8 @@ I tend not to use the built-in Rails javascript helper methods and functionality
 I'm definitely open to the idea that I'm doing things in a more complex way in some cases.  I should probably check out the current state of the js helper methods with an open mind and determine whether I want to start using them again.  
 
 *Quicksand*
+
 jQuery plugin that gives you "pretty sorting" of DOM elements.  You supply it with the DOM element containing your list and the new list of items, and it displays a pretty animation of the sorting/adding/removing.  I'd seen this recently, and thought I would try it out on this app.  
 
-h2. Architecture Choices
+= Architecture Choices
 
