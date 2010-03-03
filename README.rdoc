@@ -43,6 +43,8 @@ Simple gem that makes it easier to deal with potentially null objects
 
 I have a preference for RSpec over Test::Unit.  I find the syntax to be worlds more pleasant than standard Test::Unit.  This preference started several years ago, and I probably need to reevaluate.  There are a ton of libraries that serve to take the best parts of RSpec and layer them on top of Test::Unit.
 
+I really only have test coverage of the feed parsing.  If I were continuing to build this app out, the first thing to do would me to have proper test coverage.  
+
 *jQuery*
 
 I use jQuery on any project I'm doing that uses Javascript, which is of course basically every webapp.  I love jQuery.  
@@ -112,5 +114,3 @@ Posts are automatically tagged as read when they are opened.  This occurs in Pos
 There's a somewhat awkward mix of AJAX and non-AJAX.  Some things use AJAX, others don't.  I would want to either standardize on using AJAX for anything where it makes sense, or think it through a bit more until I felt comfortable with the breakdown.
 
 There is some HTML in the application layout that probably doesn't belong there.
-
- 
